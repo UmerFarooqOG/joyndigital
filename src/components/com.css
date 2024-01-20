@@ -1,0 +1,36 @@
+.link{
+    position: relative;
+    transition: all 1s ease;
+}
+.link::after{
+    content: '';
+    width: 0%;
+    transition: all 1s ease;
+    height: 3px;
+    overflow: hidden;
+    left: 0;
+    position: absolute;
+    bottom: -2px;
+    background: #22498c;
+}
+.active::after{
+    content: '';
+    width: 100%;
+    transition: all 1s ease;
+    height: 3px;
+    overflow: hidden;
+    left: 0;
+    position: absolute;
+    bottom: -2px;
+    background: #22498c;
+}
+.link:hover::after{
+    width: 100%;
+}
+.link:hover{
+    color: #005cfc;
+    transform: translateX(5px);
+}
+.active{
+    color: #6d6666;
+}
