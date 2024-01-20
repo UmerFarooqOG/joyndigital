@@ -46,7 +46,7 @@ const page = () => {
           <motion.div initial={{opacity : 0 , x:-300 ,scale:1  }}
               whileInView={{opacity : 1,x:0 ,scale:1   }}
               transition={{ duration: 1 ,type:'tween'}}  className=" w-full xsm:w-[70%] sm:w-full">
-   <Image src="/assets/ammadprofile.png" width={1000} className='w-full h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] rounded-[20px] object-top  object-cover' height={1000} alt='imh' />
+   <Image src="/assets/wajidprofile.png" width={1000} className='w-full h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] rounded-[20px] object-top  object-cover' height={1000} alt='imh' />
             <h5 className='text-[#2E2E2E] mt-[5px] font-Montserrat font-[600]  text-[20px] xsm:text-[25px]'>Syed Wajid</h5>
             <p className='text-[#2957A7] text-[12px] xsm:text-[16px] font-Noto font-[600] uppercase'>Group CEO</p>
           </motion.div>
