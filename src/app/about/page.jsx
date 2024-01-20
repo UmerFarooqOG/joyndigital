@@ -46,21 +46,21 @@ const page = () => {
           <motion.div initial={{opacity : 0 , x:-300 ,scale:1  }}
               whileInView={{opacity : 1,x:0 ,scale:1   }}
               transition={{ duration: 1 ,type:'tween'}}  className=" w-full xsm:w-[70%] sm:w-full">
-            <Image src="./assets/wajidProfile.png" width={1000} className='w-full h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] object-top rounded-[20px] object-cover' height={1000} alt='img' />
+            <Image src="/assets/wajidProfile.png" width={1000} className='w-full h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] object-top rounded-[20px] object-cover' height={1000} alt='img' />
             <h5 className='text-[#2E2E2E] mt-[5px] font-Montserrat font-[600]  text-[20px] xsm:text-[25px]'>Syed Wajid</h5>
             <p className='text-[#2957A7] text-[12px] xsm:text-[16px] font-Noto font-[600] uppercase'>Group CEO</p>
           </motion.div>
           <motion.div  initial={{opacity : 0 , y:300 ,scale:1  }}
               whileInView={{opacity : 1,y:0 ,scale:1   }}
               transition={{ duration: 1 ,type:'tween'}} className=" w-full xsm:w-[70%] sm:w-full">
-            <Image src="./assets/ammadprofile.png" width={1000} className='w-full h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] rounded-[20px] object-top  object-cover' height={1000} alt='imh' />
+            <Image src="/assets/ammadprofile.png" width={1000} className='w-full h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] rounded-[20px] object-top  object-cover' height={1000} alt='imh' />
             <h5 className='text-[#2E2E2E] mt-[5px] font-Montserrat font-[600]  text-[20px] xsm:text-[25px]'>Ammad Ali</h5>
             <p className='text-[#2957A7] text-[12px] xsm:text-[16px] font-Noto font-[600] uppercase'>Chief Digital Officer</p>
           </motion.div>
           <motion.div  initial={{opacity : 0 , x:300 ,scale:1  }}
               whileInView={{opacity : 1,x:0 ,scale:1   }}
               transition={{ duration: 1 ,type:'tween'}} className=" w-full xsm:w-[70%] sm:w-full">
-            <Image src="./assets/Kazmi.png" width={1000} className='w-full object-top  h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] rounded-[20px] object-cover' height={1000} alt='img' />
+            <Image src="/assets/Kazmi.png" width={1000} className='w-full object-top  h-auto sm:h-[350px] mdd:h-[300px] lg:h-[330px] rounded-[20px] object-cover' height={1000} alt='img' />
             <h5 className='text-[#2E2E2E]  mt-[5px] font-Montserrat font-[600]  text-[20px] xsm:text-[25px]'>Syed Kazmi</h5>
             <p className='text-[#2957A7] text-[12px] xsm:text-[16px] font-Noto font-[600] uppercase'>Country Head Australia</p>
           </motion.div>
@@ -82,20 +82,20 @@ const page = () => {
             <motion.div initial={{opacity : 0 , x:-300  }}
               whileInView={{opacity : 1,x:0 }}
               transition={{ duration: 1 ,type:'tween'}} className='w-full h-auto sm:h-[300px] md:h-[300px] mdd:h-[400px] lg:h-[450px] flex flex-col sm:flex-row gap-3'>
-            <Image src='./assets/teamwork1.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[35%] h-full object-cover object-center rounded-[10px] sm:rounded-[30px]' />
-            <Image src='./assets/teamwork2.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[65%] h-full object-cover rounded-[0px] sm:rounded-[30px]' />
+            <Image src='/assets/teamwork1.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[35%] h-full object-cover object-center rounded-[10px] sm:rounded-[30px]' />
+            <Image src='/assets/teamwork2.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[65%] h-full object-cover rounded-[0px] sm:rounded-[30px]' />
             </motion.div>
             <motion.div initial={{opacity : 0 , x:300  }}
               whileInView={{opacity : 1,x:0 }}
               transition={{ duration: 1 ,type:'tween'}}  className='w-full  h-auto md:h-[300px] mdd:h-[400px] lg:h-[500px] flex gap-3'>
   
-            <Image src='./assets/teamwork3.png' alt="team work img" width={1000} height={1000} className='w-full h-full object-cover object-bottom rounded-0 sm:rounded-[30px]' />
+            <Image src='/assets/teamwork3.png' alt="team work img" width={1000} height={1000} className='w-full h-full object-cover object-bottom rounded-0 sm:rounded-[30px]' />
             </motion.div>
             <motion.div initial={{opacity : 0 , x:-300  }}
               whileInView={{opacity : 1,x:0 }}
               transition={{ duration: 1 ,type:'tween'}}  className='w-full h-auto sm:h-[300px] md:h-[300px] mdd:h-[400px] lg:h-[450px] flex flex-col sm:flex-row gap-3'>
-            <Image src='./assets/teamwork4.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[65%] h-full object-cover rounded-[0px] sm:rounded-[30px]' />
-            <Image src='./assets/teamwork5.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[35%] h-full object-top object-cover rounded-[0px] sm:rounded-[30px]' />
+            <Image src='/assets/teamwork4.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[65%] h-full object-cover rounded-[0px] sm:rounded-[30px]' />
+            <Image src='/assets/teamwork5.png' alt="team work img" width={1000} height={1000} className=' w-full sm:w-[35%] h-full object-top object-cover rounded-[0px] sm:rounded-[30px]' />
             </motion.div>
           </div>
           

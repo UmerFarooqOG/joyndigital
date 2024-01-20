@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className=' px-[1rem] fixed top-0 left-0 xxxl:static w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] sm:px-[2rem] max mx-auto h-auto py-[1rem]  backdrop-blur-lg shadow-md mb-2 flex justify-between items-center'>
       <Link href={'/'} >
         <Image
-          src="./assets/logo.png"
+          src="/assets/logo.png"
           width={1000}
           height={1000}
           alt="Picture of the author" className='w-[60px] xsm:w-[100px] h-auto object-cover'
@@ -35,7 +35,7 @@ const Navbar = () => {
     <div>
     <Link onClick={() => setOpen(false)} className='cursor-pointer  inline-block absolute top-[20px] left-[20px] sm:hidden' href={'/'} >
         <Image
-          src="./assets/logo.png"
+          src="/assets/logo.png"
           width={1000}
           height={1000}
           alt="Picture of the author" className='w-[60px] xsm:w-[100px] h-auto object-cover'
