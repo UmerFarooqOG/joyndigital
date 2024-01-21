@@ -16,8 +16,8 @@ const page = () => {
       </motion.h2>
       <div className='w-full flex-col my-[30px] flex items-end justify-start sm:justify-end'>
       <div className=' sm:w-auto w-full flex justify-end'>
-      <motion.p initial={{opacity : 0 , x:200 ,scale:0  }}
-              whileInView={{opacity : 1,x:0   ,scale:1    }}
+      <motion.p initial={{opacity : 0 , x:200  }}
+              whileInView={{opacity : 1,x:0      }}
               transition={tranitiom}  className='text-[#7f7f7f] font-Noto  text-[10px] ssm:text-[12px] xsm:text-[14px] sm:text-[16px] '>Revolutionizing product delivery with AI Precision: <br /> From  Development to Data-Driven Market Validation.</motion.p>
       </div>
       </div>
