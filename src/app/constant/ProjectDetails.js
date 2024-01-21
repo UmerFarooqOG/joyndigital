@@ -1,6 +1,6 @@
 import projectDetailImage from '../../../public/assets/projectDetailImages/luckycementd.png'
-import chatkrow from '../../../public/assets/projectDetailImages/chatkrow.svg'
-// import luckycemet from '../../../public/assets/projectDetailImages/luckycemet.svg'
+import chatkrow from '../../../public/assets/chatkrow.png'
+// import luckycemet from '../../../public/assets/luckycemet.png'
 import chatkrowpdlogo from '../../../public/assets/projectDetailImages/chatkrowpdlogo.png'
 
 

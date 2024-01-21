@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 
 const page = () => {
 
-  const tranitiom = {duration:2,type:'spring'}
+  const tranitiom = {duration:1,type:'spring'}
   return (
     <div className='max-w-[1500px] mt-[60px] h-full mx-auto'>
     {/* ------- hero --------  */}
@@ -24,15 +24,15 @@ const page = () => {
 
     {/* ---- --- text-section  */}
     <section className='w-full h-full px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
-      <motion.h2  initial={{opacity : 0 , x:-300 ,scale:0  }}
-              whileInView={{opacity : 1,x:0 ,scale:1   }}
+      <motion.h2  initial={{opacity : 0 , x:-300 ,  }}
+              whileInView={{opacity : 1,x:0 ,   }}
               transition={{ duration: 1 ,type:'tween'}} className=' text-[18px] ssm:text-[23px] xsm:text-[40px] md:text-[60px] mdd:text-[70px] w-full text-[#2E2E2E] font-Montserrat font-bold'>We let you build relations <b></b> through our tailored digital <br /> products.</motion.h2>
       <div className='w-full flex-col my-[30px] flex items-end justify-start sm:justify-end'>
       <div className=' sm:w-auto w-full'>
       <motion.p initial={{opacity : 0 , x:200 ,scale:0  }}
               whileInView={{opacity : 1,x:0   ,scale:1    }}
               transition={tranitiom} className='text-[#7F7F7F] text-[10px] ssm:text-[12px] font-Noto xsm:text-[14px] sm:text-[16px] '>We create digital products and platforms that drive user <br /> engagement and redefine industries by developing an intimate <br /> knowledge of our clients and their audiences.</motion.p>
-      <Link href={'/'} ><motion.p className='my-[30px] inline-block bg-[#2957A7] hover:bg-yellow-400 duration-[1s] font-Montserrat text-left font-semibold text-white py-[8px] rounded-[20px] px-[20px]' initial={{opacity:0 , y:200}} whileInView={{opacity:1, y:0}} transition={tranitiom}>Get in touch</motion.p></Link>
+      <Link href={'/'} ><motion.p className='my-[30px] inline-block bg-[#2957A7] hover:bg-yellow-400 duration-[1s] font-Montserrat text-left font-semibold text-white py-[8px] rounded-[20px] px-[20px]' initial={{opacity:0 , y:100}} whileInView={{opacity:1, y:0}} transition={tranitiom}>Get in touch</motion.p></Link>
       </div>
       </div>
     </section>

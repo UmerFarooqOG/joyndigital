@@ -1,19 +1,13 @@
 "use client"
 import React from 'react'
 import { Vortex } from 'react-loader-spinner';
+import Image from 'next/image';
 const Loading = () => {
   return (
     <div className='absolute top-0 left-0 w-full z-[999] h-[100vh] flex items-center justify-center bg-white'>
-<Vortex
-  visible={true}
-  height="80"
-  width="80"
-  ariaLabel="vortex-loading"
-  wrapperStyle={{}}
-  wrapperClass="vortex-wrapper"
-  colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
-  />
 
+
+  <Image src="/assets/joynanimation.gif" alt='Loader' width={2000} height={1000} className=' w-[120px] xsm:w-[200px] h-auto' />
 
   </div>
   )

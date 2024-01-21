@@ -1,6 +1,6 @@
-import proj1 from '../../../public/assets/chatkrow.svg'
+import proj1 from '../../../public/assets/chatkrow.png'
 import chatkrowlogo from '../../../public/assets/chatkrowlogo.svg'
-import proj2 from '../../../public/assets/luckycemet.svg'
+import proj2 from '../../../public/assets/luckycemet.png'
 import luckycementlogo from '../../../public/assets/luckycementlogo.svg'
 
 export const navLinks = [

@@ -9,8 +9,8 @@ const page = () => {
     <div className='max-w-[1500px]  overflow-x-hidden h-full mx-auto'>
           {/* ---- --- text-section  */}
     <section className='w-full mt-[80px] h-full px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
-      <motion.h2 initial={{opacity : 0 , x:-300 ,scale:0  }}
-              whileInView={{opacity : 1,x:0 ,scale:1   }}
+      <motion.h2 initial={{opacity : 0 , x:-300   }}
+              whileInView={{opacity : 1,x:0    }}
               transition={{ duration: 1 ,type:'tween'}} className=' text-[14px] ssm:text-[19px] xsm:text-[25px] md:text-[40px] mdd:text-[55px] w-full text-[#2E2E2E] font-Montserrat font-[500]'>
       <span className='font-bold'>Accelerating Innovation:</span> <br /> Where your business goals <br /> transform into exceptional <br /> products.
       </motion.h2>
