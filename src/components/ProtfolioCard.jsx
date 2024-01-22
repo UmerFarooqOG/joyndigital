@@ -11,7 +11,7 @@ const ProtfolioCard = ({ logo, spanTitle, title, desc, image,id }) => {
         background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)'
     }
     return (
-        <motion.div initial={{opacity : 0 , x:-300   }}
+        <motion.div initial={{opacity : 0 , x:-200   }}
         whileInView={{opacity : 1,x:0     }}
         transition={tranitiom}  className='flex flex-col mdd:flex-row my-[20px] overflow-hidden rounded-[30px] min-h-[40vh] h-full mdd:h-[70vh] w-full relative place-content-center items-center justify-start'>
 

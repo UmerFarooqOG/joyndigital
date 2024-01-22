@@ -10,7 +10,7 @@ const ProtfolioCardReverse = ({ logo, spanTitle, title, desc, image,id }) => {
         background: 'linear-gradient(298deg, #951314 0%, #EB2022 100%)'
     }
     return (
-        <motion.div initial={{opacity : 0 , x:300   }}
+        <motion.div initial={{opacity : 0 , x:200   }}
         whileInView={{opacity : 1,x:0     }}
         transition={tranitiom}   className='flex flex-col-reverse mdd:flex-row-reverse my-[20px] overflow-hidden rounded-[30px] min-h-[40vh] h-full mdd:h-[70vh] w-full relative place-content-center items-center justify-start'>
 

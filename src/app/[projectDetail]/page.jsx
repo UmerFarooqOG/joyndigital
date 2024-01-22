@@ -38,9 +38,9 @@ const Page = ({ params }) => {
   return (
     <>
       {loader ? <Loading /> :
-        <div className='max-w-[1500px] overflow-x-hidden h-full mx-auto'>
+        <div className='max-w-[1500px] overflow-hidden w-full mx-auto'>
           {/* ---- --- text-section  */}
-          <section className='w-full mt-[80px] h-full px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+          <section className='w-full mt-[80px]  px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
             <motion.h5 initial={{ opacity: 0, x: -300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'tween' }} className='text-[#2958A5] text-[20px] xsm:text-[30px] font-[500] font-Noto'>{name}</motion.h5>

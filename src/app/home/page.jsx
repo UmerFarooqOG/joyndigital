@@ -24,7 +24,7 @@ const page = () => {
 
     {/* ---- --- text-section  */}
     <section className='w-full h-full  px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
-      <motion.h2  initial={{opacity : 0 , x:-300 ,  }}
+      <motion.h2  initial={{opacity : 0 , x:-200 ,  }}
               whileInView={{opacity : 1,x:0 ,   }}
               transition={{ duration: 1 ,type:'tween'}} className=' text-[18px] ssm:text-[23px] xsm:text-[40px] md:text-[60px] mdd:text-[70px] w-full text-[#2E2E2E] font-Montserrat font-bold'>We let you build relations <b></b> through our tailored digital <br /> products.</motion.h2>
       <div className='w-full flex-col my-[30px] flex items-end justify-start sm:justify-end'>
@@ -39,10 +39,10 @@ const page = () => {
 
     {/* work-section  */}
     <section className='w-full min-h-[100vh] px-[10px] ssm:px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
-      <motion.h2 initial={{opacity : 0 , x:-300   }}
+      <motion.h2 initial={{opacity : 0 , x:-200   }}
               whileInView={{opacity : 1,x:0     }}
               transition={{ duration: 1 ,type:'tween'}} className='font-Montserrat text-[60px] font-[500] text-[#2e2e2e]'>Here’s our <span className='font-bold'>work</span> </motion.h2>
-      <div className='w-full flex my-[40px] flex-col items-center justify-center gap-[40px] h-full'>
+      <div className='w-full flex my-[10px] ssm:my-[40px] flex-col items-center justify-center gap-[40px] h-full'>
         <ProtfolioCard logo={protData[0].logo} spanTitle={protData[0].spanTitle} title={protData[0].title} desc={protData[0].desc} image={protData[0].image} id={1} />
         <ProtfolioCardReverse logo={protData[0].logo} spanTitle={protData[1].spanTitle} title={protData[1].title} desc={protData[1].desc} image={protData[1].image} id={2} />
         <ProtfolioCard logo={protData[0].logo} spanTitle={protData[0].spanTitle} title={protData[0].title} desc={protData[0].desc} image={protData[0].image} id={3} />
