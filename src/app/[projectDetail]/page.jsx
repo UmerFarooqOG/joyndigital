@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 import Loading from '@/app/loading';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { BiArrowToLeft, BiArrowToRight } from 'react-icons/bi';
 import { motion } from 'framer-motion'
 
 const Page = ({ params }) => {

@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
    
-    <nav className=' px-[1rem] fixed top-0 left-0 xxxl:static w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] sm:px-[2rem] max mx-auto h-auto py-[1rem]  backdrop-blur-lg shadow-md mb-2 flex justify-between items-center'>
+    <nav className=' px-[1rem] fixed top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] sm:px-[2rem] max mx-auto h-auto py-[1rem]  backdrop-blur-lg shadow-md mb-2 flex justify-between items-center'>
       {/* <Link href={'/'} >
         <Image
           src="/assets/logo.png"
@@ -34,13 +34,13 @@ const Navbar = () => {
           src="/assets/joyn-png.png"
           width={1000}
           height={1000}
-          alt="Picture of the author" className='w-[60px] xsm:w-[100px] h-auto object-cover'
+          alt="Picture of the author" priority className='w-[60px] xsm:w-[100px] h-auto object-cover'
         />
         <Image
           src="/assets/oimg.png"
           width={1000}
           height={1000}
-          alt="Picture of the author" className='w-[21px] logo absolute top-0 left-[9px] xsm:left-[15px] xsm:w-[35px] h-auto object-cover'
+          alt="Picture of the author" priority className='w-[21px] logo absolute top-0 left-[9px] xsm:left-[15px] xsm:w-[35px] h-auto object-cover'
         />
       </Link>
 
