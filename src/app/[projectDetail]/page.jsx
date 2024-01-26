@@ -21,7 +21,7 @@ const Page = ({ params }) => {
     const data = projectData.find((project) => project.id === parseInt(id));
     setProjectContent(data)
     setLoader(false);
-  }, [])
+  }, [id])
 
   const { name, heading, heroP, sec2img1, sec2img2, sec3p1, sec3p2, sec3p3, sec4img, logo, headinbr1, headinbr2, heroPbr1, heroPbr2, sec4headingB, sec4headingM, sec4headingM1, npid, bglg } = projectContent;
 
@@ -59,10 +59,10 @@ const Page = ({ params }) => {
 
               <Carousel autoPlay={true} interval={2000} showArrows={false} showStatus={false} infiniteLoop={true}className='relative h-full w-full '>
                 <div className='h-full' >
-                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' width={1030} height={0} src={sec2img1} />
+                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' width={1030} height={0} src={sec2img1} alt='imh' />
                 </div>
                 <div className='h-full' >
-                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' width={1030} height={0} src={sec2img2} />
+                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' width={1030} height={0} src={sec2img2} alt='img' />
                 </div>
               </Carousel>
               {/* initial={{ opacity: 0, y: 300, scale: 0.7 }}
