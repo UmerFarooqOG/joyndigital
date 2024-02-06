@@ -13,14 +13,14 @@ const ProtfolioCard = ({ logo, spanTitle, title, desc, image,id }) => {
     return (
         <motion.div initial={{opacity : 0 , x:-200   }}
         whileInView={{opacity : 1,x:0     }}
-        transition={tranitiom}  className='flex flex-col mdd:flex-row my-[20px] rounded-[30px] h-[624px] w-full relative items-center justify-center'>
+        transition={tranitiom}  className='flex flex-col mdd:flex-row my-[20px] rounded-[30px] h-auto mdd:h-[550px] lg:h-[700px] xlb:h-[624px] w-full relative items-center justify-center'>
 
 
             <div className=' rounded-[20px] mdd:rounded-e-[0px] rounded-s-[20px] mdd:rounded-s-[30px] h-full w-full my-[40px] mdd:w-[45%] flex flex-col gap-[20px] px-[20px] ssm:px-[30px] py-[20px] items-start justify-center ssm:py-[30px]  bg-white '>
                 <Image src={logo} width={100} height={100} className='w-[120px] lg:w-[228px] h-[70px]' alt='Logo image' />
-                <h3 className=' text-[15px] leading-[42px] ssm:text-[18px] xsm:text-[22px] lg:text-[32px] font-Montserrat'><span className='text-[#2957A7] font-bold'>{spanTitle} <br /></span>{title} <br /></h3>
+                <h3 className=' text-[15px] leading-[42px] ssm:text-[18px] xsm:text-[22px] lg:text-[32px] font-normal font-Montserrat'><span className='text-[#2957A7] font-bold'>{spanTitle} <br /></span>{title} <br /></h3>
 
-                <p className='text-[#656B70] text-[10px] xsm:w-full ssm:text-[12px] xsm:text-[14px] lg:text-[24px] font-Noto w-[90%] leading-[36px]'>{desc}</p>
+                <p className='text-[#656B70] xsm:w-full font-Noto w-[90%] font-normal leading-[36px]'>{desc}</p>
 
                 <Link className="text-[#2957A7] hover:ml-[20px] hover:text-black  hover:scale-105 duration-[1s]  text-[14px] xsm:text-[16px] font-semibold flex w-[50%] items-center gap-[4px]" href={`/${id}`} > View case <Image src={'/assets/Arrow.svg'} width={100} height={100} alt='arrow' className=' w-[14px] xsm:w-[18px]' /> </Link>
 

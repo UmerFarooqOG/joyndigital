@@ -26,6 +26,7 @@ module.exports = {
 
         'mdd': '862px',
         'xll': '1362px',
+        'xlb': '1240px',
         'ssm': '310px',
       },
     },

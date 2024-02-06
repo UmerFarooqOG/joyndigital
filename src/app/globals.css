@@ -54,3 +54,8 @@ li{
 .btn:hover::after{
   width: 100%;
 }
+
+.projDetailLogo > svg{
+  font-size: 77px;
+  color: #494747;
+}
