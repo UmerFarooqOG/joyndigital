@@ -58,10 +58,10 @@ const Page = ({ params }) => {
 
               <Carousel autoPlay={true} interval={2000} showArrows={false} showStatus={false} infiniteLoop={true}className='relative h-full w-full '>
                 <div className='h-full' >
-                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' width={1030} height={0} src={sec2img1} alt='imh' />
+                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]'src={sec2img1} width={1030} height={0}  alt='imh' />
                 </div>
                 <div className='h-full' >
-                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' width={1030} height={0} src={sec2img2} alt='img' />
+                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' src={sec2img2} width={1030} height={0}  alt='img' />
                 </div>
               </Carousel>
               {/* initial={{ opacity: 0, y: 300, scale: 0.7 }}
@@ -114,7 +114,7 @@ const Page = ({ params }) => {
             <motion.div initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap mt-[40px] py-[30px] items-center justify-between w-full text-center sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%]'>
-                { useLogos.map((i,index) =>( <p key={index} className='projDetailLogo'>{i}</p>)) }
+               
                 
             </motion.div>
             
@@ -145,7 +145,7 @@ const Page = ({ params }) => {
 
               </div>
               <div className='overflow-hidden flex items-center justify-center h-full rounded-[20px] rounded-s-[20px] mdd:rounded-s-[0px]  rounded-e-[30px]  px-[5px] ssm:px-[20px] py-[20px] ssm:py-[10px]   bg-l flex-1 '>
-                <Image src={sec4img} width={1000} height={1000} className=' w-full h-full ssm:w-[90%] ssm:h-auto lg:w-[700px] lg:h-[400px]' alt='product image' />
+                <Image className=' w-full h-full ssm:w-[90%] ssm:h-auto lg:w-[700px] lg:h-[400px]' src={sec4img} width={1000} height={1000} alt='product image' />
               </div>
             </motion.div>
 
