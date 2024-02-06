@@ -20,15 +20,8 @@ const Navbar = () => {
 
   return (
    
-    <nav className=' px-[1rem] fixed top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] sm:px-[2rem] max mx-auto h-auto py-[1rem]  backdrop-blur-lg shadow-md mb-2 flex justify-between items-center'>
-      {/* <Link href={'/'} >
-        <Image
-          src="/assets/logo.png"
-          width={1000}
-          height={1000}
-          alt="Picture of the author" className='w-[60px] xsm:w-[100px] h-auto object-cover'
-        />
-      </Link> */}
+    <nav className=' px-[1rem] fixed top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] sm:px-[2rem] max mx-auto h-auto py-[1rem]  backdrop-blur-lg mb-2 flex justify-between items-center'>
+    
       <Link href={'/'} className='relative' >
         <Image
           src="/assets/joyn-png.png"
@@ -59,7 +52,7 @@ const Navbar = () => {
     </div>
         {
           navLinks.map((i) => {
-            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[20px] text-[#202020] link xl:text-[22px] font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
+            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[20px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
 
           })
         }
