@@ -24,7 +24,7 @@ export const projectData = [
         sec4headingM1:"mobile",
         logo:"/assets/projectDetailImages/LuckySementLogoWhite.png",
         theR:true,
-        useLogos:[<FaPython />,<FaAws />,<BiLogoPostgresql />,<SiGoogleanalytics />,<SiReact />],
+        useLogos:[{id:0,logo:<FaPython />},{id:1,logo:<FaAws />},{id:2,logo:<BiLogoPostgresql />},{id:3,logo:<SiGoogleanalytics />},{id:0,logo:<SiReact />}],
         npid:2,
         bglg:"redlg"
     },
@@ -44,7 +44,8 @@ export const projectData = [
         sec4headingM1:"mobile",
         logo:chatkrowpdlogo,
         theR:true,
-        useLogos:[<FaPython />,<FaAws />,<BiLogoPostgresql />,<SiGoogleanalytics />,<SiReact />],
+        useLogos:[{id:0,logo:<FaPython />},{id:1,logo:<FaAws />},{id:2,logo:<BiLogoPostgresql />},{id:3,logo:<SiGoogleanalytics />},{id:0,logo:<SiReact />}],
+        
         npid:1,
         bglg:"bluelg"
     },
@@ -64,7 +65,7 @@ export const projectData = [
         sec4headingM1:"digitisation end to end", 
         theR:false,
         logo:"/assets/projectDetailImages/LuckySementLogoWhite.png",
-        useLogos:[<SiGodaddy />,<SiLaravel />,<SiPhp />],
+        useLogos:[{id:0,logo:<SiGodaddy />},{id:1,logo:<SiLaravel />},{id:2,logo:<SiPhp />}],
         npid:2,
         bglg:"redlg"
     },

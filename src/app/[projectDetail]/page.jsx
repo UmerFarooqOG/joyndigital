@@ -114,7 +114,7 @@ const Page = ({ params }) => {
             <motion.div initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap mt-[40px] py-[30px] items-center justify-between w-full text-center sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%]'>
-               
+                { useLogos.map((i) =>( <p key={i.id} className='projDetailLogo'>{i.logo}</p>)) }
                 
             </motion.div>
             
