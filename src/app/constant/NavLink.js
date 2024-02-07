@@ -2,7 +2,7 @@ import proj1 from '../../../public/assets/chatkrow.png'
 import chatkrowlogo from '../../../public/assets/chatkrowlogo.svg'
 import proj2 from '../../../public/assets/luckycemet.png'
 import luckycementlogo from '../../../public/assets/luckycementlogo.svg'
-import latitudelogo from '../../../public/assets/projectDetailImages/LatitudeLogo.png'
+import latitudelogo from '../../../public/assets/projectDetailImages/LatitudeLogo.svg'
 import proj3 from '../../../public/assets/projectDetailImages/Latitude.png'
 
 export const navLinks = [

@@ -20,7 +20,7 @@ const ProtfolioCard = ({ logo, spanTitle, title, desc, image,id }) => {
                 <Image src={logo} width={100} height={100} className='w-[120px] lg:w-[228px] h-[70px]' alt='Logo image' />
                 <h3 className=' text-[15px] leading-[42px] ssm:text-[18px] xsm:text-[22px] lg:text-[32px] font-normal font-Montserrat'><span className='text-[#2957A7] font-bold'>{spanTitle} <br /></span>{title} <br /></h3>
 
-                <p className='text-[#656B70] xsm:w-full font-Noto w-[90%] font-normal leading-[36px]'>{desc}</p>
+                <p className='text-[#656B70] xsm:w-full font-normal lg:text-[20px] font-Noto w-[90%] leading-[36px]'>{desc}</p>
 
                 <Link className="text-[#2957A7] hover:ml-[20px] hover:text-black  hover:scale-105 duration-[1s]  text-[14px] xsm:text-[16px] font-semibold flex w-[50%] items-center gap-[4px]" href={`/${id}`} > View case <Image src={'/assets/Arrow.svg'} width={100} height={100} alt='arrow' className=' w-[14px] xsm:w-[18px]' /> </Link>
 

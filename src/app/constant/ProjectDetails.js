@@ -51,7 +51,7 @@ export const projectData = [
     },
     {
         id:3,
-        name:"Lucky Cement",
+        name:"Latitude",
         heading:"Remote monitoring system for efficient operations and visibility.",
         heroP:"A one-window solution with real time synchronization, to manage sales, distribution and field force operations.",
         sec2img1:'/assets/projectDetailImages/latitudeslide1.png',
