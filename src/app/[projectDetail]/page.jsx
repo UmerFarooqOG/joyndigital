@@ -56,17 +56,15 @@ const Page = ({ params }) => {
 
           <section className='w-full my-[20px]  sm:my-[40px] h-auto md:h-full flex items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
 
-              <Carousel autoPlay={true} interval={2000} showArrows={false} showStatus={false} infiniteLoop={true}className='relative h-full w-full '>
+              <Carousel autoPlay={true} interval={2000} showThumbs={false} showArrows={false} showStatus={false} infiniteLoop={true}className='relative h-full w-full '>
                 <div className='h-full' >
-                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]'src={sec2img1} width={1030} height={0}  alt='imh' />
+                  <Image src={sec2img1}  className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]'width={1030} height={0}  alt='img' />
                 </div>
                 <div className='h-full' >
-                  <Image className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]' src={sec2img2} width={1030} height={0}  alt='img' />
+                  <Image src={sec2img2}  className=' h-full sm:h-[90%]  rounded-[10px] md:rounded-[40px] object-cover w-[100%] sm:w-[85%]'  width={1030} height={0}  alt='img' />
                 </div>
               </Carousel>
-              {/* initial={{ opacity: 0, y: 300, scale: 0.7 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={tranitiom}  */}
+             
 
           </section>
 
@@ -114,7 +112,11 @@ const Page = ({ params }) => {
             <motion.div initial={{ opacity: 0, x: 300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap mt-[40px] py-[30px] items-center gap-[60px] w-full text-center sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%]'>
-                { useLogos.map((i) =>( <p key={i.id} className='projDetailLogo'>{i.logo}</p>)) }
+                { useLogos.map((i,index) =>{
+                  
+                  return <p key={index} className='projDetailLogo'>{i.logo}</p>
+                
+              }) }
                 
             </motion.div>
             

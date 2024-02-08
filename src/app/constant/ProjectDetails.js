@@ -45,7 +45,6 @@ export const projectData = [
         logo:chatkrowpdlogo,
         theR:true,
         useLogos:[{id:0,logo:<FaPython />},{id:1,logo:<FaAws />},{id:2,logo:<BiLogoPostgresql />},{id:3,logo:<SiGoogleanalytics />},{id:0,logo:<SiReact />}],
-        
         npid:1,
         bglg:"bluelg"
     },
