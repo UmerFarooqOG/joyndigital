@@ -217,10 +217,10 @@ const Page = () => {
     
                     <motion.form onSubmit={handle} initial={{ opacity: 0, x: -180 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, type: 'tween' }} action="" className='bg-[#FFFAFA] rounded-[30px] px-[10px] xsm:px-[30px] py-[70px] flex-col  flex items-center justify-center w-[100%] sm:w-[75%]'>
-                        <h2 className='text-[#2E2E2E] mt-[20px] text-[20px] ssm:text-[25px] xsm:text-[30px] font-Montserrat font-medium'>Project Enquiry</h2>
+                        transition={{ duration: 1, type: 'tween' }} action="" className='bg-[#FFFAFA] rounded-[30px] px-[10px] xsm:px-[30px] py-[70px] flex-col  flex items-center justify-center w-[100%] sm:w-[85%]'>
+                        <h2 className='text-[#2E2E2E] mt-[20px] text-[20px] ssm:text-[25px] xsm:text-[40px] font-Montserrat font-[600]'>Project Enquiry</h2>
     
-                        <div className='mt-[50px] flex flex-col gap-[10px] w-[100%] sm:w-[65%]'>
+                        <div className='mt-[50px] flex flex-col gap-[10px] w-[100%] sm:w-[55%]'>
     
     
                             <motion.div initial={{ opacity: 0, x: -180 }}
