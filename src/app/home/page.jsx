@@ -6,9 +6,11 @@ import ProtfolioCardReverse from '@/components/ProtCardReverse'
 import ProtfolioCard from '@/components/ProtfolioCard'
 import {motion} from 'framer-motion'
 import Hero from '@/components/Hero.jsx'
+import LocomotiveScroll from 'locomotive-scroll'
 
 
 const page = () => {
+  const locomotiveScroll = new LocomotiveScroll();
 
   const tranitiom = {duration:1,type:'spring'}
   return (
