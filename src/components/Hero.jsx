@@ -44,12 +44,11 @@ const Hero = () => {
       setRotation(distanceFromCenter * rotationSpeed);
     };
   
-    // console.log(rotate
-
+ 
     return (
-        <div style={colors[backgroundIndex]} onMouseMove={handleMouseMove} className='w-full h-full rounded-[10px] xsm:rounded-[48px]'>
-            <div className='flex items-center w-full overflow-hidden h-full px-0 mdd:px-[5rem] justify-between'>
-                <h5 className='flex-1 text-[40px] ssm:text-[50px] xsm:text-[70px] sm:text-[100px] text-center mdd:text-[100px] lg:text-[120px] font-Montserrat font-normal text-white'>{contents[contentIndex]}s<span className={`${contentIndex === 2 ? 'text-[#2957A7]' : 'text-[#EB2022]'}  `}>.</span></h5>
+        <div style={colors[backgroundIndex]} onMouseMove={handleMouseMove} className='w-full h-full'>
+            <div className='flex items-center w-full overflow-hidden h-full px-[60px] lg:px-[90px] xlb:px-[120px] justify-between'>
+                <h5 className='flex-1 text-[40px] ssm:text-[50px] xsm:text-[70px] sm:text-[100px] text-left mdd:text-[100px] lg:text-[120px] font-Montserrat font-normal text-white'>{contents[contentIndex]}<span className={`${contentIndex === 2 ? 'text-[#2957A7]' : 'text-[#EB2022]'}  `}>.</span></h5>
                 <div className='flex-1 hidden lg:block relative'>
                 <Image style={{ transform: `rotate(${rotation}deg)`,}} src={images[contentIndex]} alt='circle image' width={1000} height={1000} className=' absolute left-0 top-[-100px] w-[700px] h-auto' />
                 </div>

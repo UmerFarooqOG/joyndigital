@@ -20,20 +20,20 @@ const Navbar = () => {
 
   return (
    
-    <nav className=' px-[1rem] fixed top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] sm:px-[2rem] max mx-auto h-auto py-[1rem]  backdrop-blur-lg mb-2 flex justify-between items-center'>
+    <nav className=' sticky top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] px-[60px] lg:px-[90px] xlb:px-[120px] max mx-auto py-[1rem]  backdrop-blur-lg h-[15vh] flex justify-between items-center'>
     
       <Link href={'/'} className='relative' >
         <Image
           src="/assets/joyn-png.png"
           width={1000}
           height={1000}
-          alt="Picture of the author" priority className='w-[60px] xsm:w-[100px] h-auto object-cover'
+          alt="Picture of the author" priority className='w-[60px] xsm:w-[110px] h-auto object-cover'
         />
         <Image
           src="/assets/oimg.png"
           width={1000}
           height={1000}
-          alt="Picture of the author" priority className='w-[21px] logo absolute top-0 left-[9px] xsm:left-[15px] xsm:w-[35px] h-auto object-cover'
+          alt="Picture of the author" priority className='w-[21px] logo absolute top-0 left-[9px] xsm:left-[19px] xsm:w-[38px] h-auto object-cover'
         />
       </Link>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
     </div>
         {
           navLinks.map((i) => {
-            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[20px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
+            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
 
           })
         }

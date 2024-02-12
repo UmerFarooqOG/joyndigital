@@ -13,7 +13,7 @@ export const projectData = [
         id:1,
         name:"Chat Krow",
         heading:"Streamlining Organizational Communication.",
-        heroP:"We create digital products and platforms that drive user engagement and redefine industries by developing an intimate knowledge of our clients and their audiences.",
+        heroP:"An AI-powered chat assistant for WhatsApp, simplifies corporate communication, enhancing engagement and efficiency. It streamlines messaging, optimizes interaction, and fosters collaboration within organizations.",
         sec2img:'/assets/projectDetailImages/luckycementd.png',
         sec3p1:"Corporate clients often face hurdles in accessing essential corporate data. Maneuvering through intricate conversations efficiently remains a significant challenge. Simplifying access and streamlining communication processes are paramount for improved client engagement and operational efficiency.",
         sec3p2:"ChatKrow, an AI-powered chat assistant for WhatsApp, streamlines communication and management within organizations. It simplifies messaging complexity, enhancing interaction dynamics for seamless collaboration. Experience the transformative solution designed to optimize organizational communication.",
