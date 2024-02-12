@@ -4,7 +4,8 @@ import { FiPhone } from "react-icons/fi";
 import Link from "next/link";
 
 const Footer = () => (
-  <footer className='max-w-[1500px] px-[20px] mdd:px-[40px] py-[4rem] bg-white opacity-[0.8] mx-auto flex items-center flex-col justify-center'>
+  <footer className=' px-[20px] mdd:px-[40px] py-[4rem] bg-white opacity-[0.8] w-full flex items-center flex-col justify-center'>
+    <div className="w-full h-full max-w-[1400px] mx-auto">
     <div className=" flex-wrap px-[20px] xxm:px-[40px]  md:flex-nowrap flex gap-[5px] xxm:gap-[10px] mdd:gap-[30px] lg:gap-[50px] items-start justify-start md:justify-center w-full">
       <div className=" w-full xsm:w-[60%] md:w-[45%] mdd:w-[40%] flex flex-col gap-[20px]">
         <div className="flex items-center justify-start gap-[10px]">
@@ -46,6 +47,7 @@ const Footer = () => (
         <Link href={'/'} className=" text-[12px] xxm:text-[14px] underline font-[400] font-Noto text-[#656B70]" > Privacy Policy </Link>
         <p className=" text-[12px] xsm:text-center xxm:text-[14px] font-[400] font-Nato text-[#656B70]" > Copyrights@2024 All Rights Reserved</p>
     
+    </div>
     </div>
 
   </footer>

@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
    
-    <nav className=' sticky top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] px-[60px] lg:px-[90px] xlb:px-[120px] max mx-auto py-[1rem]  backdrop-blur-lg h-[15vh] flex justify-between items-center'>
+    <nav className=' max-w-[1440px] sticky top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] px-[60px] lg:px-[90px] xlb:px-[120px] max mx-auto py-[1rem]  backdrop-blur-lg h-auto flex justify-between items-center'>
     
       <Link href={'/'} className='relative' >
         <Image

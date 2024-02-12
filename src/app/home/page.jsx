@@ -11,15 +11,15 @@ const page = () => {
   
   const tranitiom = {duration:1,type:'spring'}
   return (
-    <div className='max-w-[1440px] overflow-hidden  h-full mx-auto'>
+    <div className='overflow-hidden h-full'>
     {/* ------- hero --------  */}
-    <section className='w-full h-[70vh] xsm:h-[85vh] mx-auto'>
+    <section className='h-[70vh] xsm:h-[87vh] mx-auto'>
    <Hero />
 
     </section>
 
     {/* ---- --- text-section  */}
-    <section className='w-full h-full  px-[60px] lg:px-[90px] xlb:px-[120px] py-[56px] mx-auto'>
+    <section className='w-full max-w-[1440px] h-full  px-[60px] lg:px-[90px] xlb:px-[120px] py-[56px] mx-auto'>
       <motion.h2  initial={{opacity : 0 , x:-200 ,  }}
               whileInView={{opacity : 1,x:0 ,   }}
               transition={{ duration: 1 ,type:'tween'}} className=' text-[24px] ssm:text-[28px] xsm:text-[50px] sm:text-[60px] mdd:text-[72px] leading-normal sm:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>We let you build relations <b></b> through our tailored digital products.</motion.h2>
@@ -34,7 +34,7 @@ const page = () => {
     </section>
 
     {/* work-section  */}
-    <section className='w-full min-h-[100vh] px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
+    <section className='w-full max-w-[1440px] min-h-[100vh] px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
       <motion.h2 initial={{opacity : 0 , x:-200   }}
               whileInView={{opacity : 1,x:0     }}
               transition={{ duration: 1 ,type:'tween'}} className='font-Montserrat text-[60px] font-[500] text-[#2e2e2e]'>Here’s our <span className='font-bold'>work</span> </motion.h2>
