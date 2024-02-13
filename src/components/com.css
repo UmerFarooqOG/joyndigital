@@ -36,9 +36,6 @@
 }
 
 
-.logo{
-   animation: rotat 7s linear infinite ;
-}
 
 
 @keyframes rotat {
