@@ -11,7 +11,7 @@ const page = () => {
       <section className='w-full mt-[80px] h-full px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[30px] sm:text-[35px] mdd:text-[50px] lg:text-[60px] xll:text-[72px] leading-normal lg:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>
+          transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[30px] sm:text-[35px] mdd:text-[50px] lg:text-[60px] xll:text-[72px] leading-normal lg:leading-[100px] w-full text-[#2E2E2E] f font-Montserrat font-normal'>
           <span className='font-bold'>Accelerating Innovation:</span> <br /> Where your business goals <br /> transform into exceptional <br /> products.
         </motion.h2>
         <div className='w-full flex-col my-[30px] flex items-end justify-start sm:justify-end'>
