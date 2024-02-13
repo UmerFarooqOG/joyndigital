@@ -15,7 +15,7 @@ const linbg = {
   background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)'
 }
 
-const page = () => {
+const Page = () => {
   const images = ['/assets/services/services2.jpg', '/assets/services/services3.jpg', '/assets/services/services4.jpg']; 
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
@@ -136,6 +136,7 @@ const page = () => {
           <div >
             <h2 className='font-Montserrat font-bold text-[25px] xsm:text-[30px] md:text-[50px] xll:text-[57px]  text-[#fff]'>Partner with us</h2>
             <p className='font-Noto text-[12px] xsm:text-[14px] leading-normal xll:leading-[50px] mdd:text-[18px] xll:md:text-[20px] text-[#F2EEEE]'>We’d love to learn more about your digital project and see <br /> how we can help you</p>
+
           </div>
           <div className=''>
             <Link href={'/contact'} className='bg-[#E52325] hover:bg-transparent hover:border-[2px] duration-[0.6s] text-[13px] xsm:text-[16px] md:text-[20px] xll:text-[24px] text-[#fff] font-Montserrat rounded-[40px] md:rounded-[60px] py-[10px] px-[20px] md:px-[30px] h-[45px] md:h-[50px] flex items-center justify-center font-medium' >
@@ -153,4 +154,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
