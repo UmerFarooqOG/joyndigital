@@ -42,7 +42,7 @@ export const protData = [
     },
     {
         logo:latitudelogo,
-        spanTitle:"Remote monitoring system",
+        spanTitle:"Resource management system",
         title:"for efficient operations and visibility",
         desc:"Latitude drives digital transformation, deploying real-time data solutions and efficient complaint management. Project tracking, remote monitoring, GIS surveys, and complaints handling, optimizing operations effortlessly.",
         image:proj3,
