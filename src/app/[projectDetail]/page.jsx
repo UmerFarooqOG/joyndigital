@@ -38,7 +38,7 @@ const Page = ({ params }) => {
       {loader ? <Loading /> :
         <div className='max-w-[1400px] overflow-hidden w-full mx-auto'>
           {/* ---- --- text-section  */}
-          <section className='w-full mt-[80px]  px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+          <section className='w-full mt-[80px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
             <motion.h5 initial={{ opacity: 0, x: -300 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'tween' }} className='text-[#2958A5] text-[20px] xsm:text-[40px] font-[500] font-Noto'>{name}</motion.h5>
@@ -54,7 +54,7 @@ const Page = ({ params }) => {
             </div>
           </section>
 
-          <section className='w-full my-[20px]  sm:my-[40px] h-auto md:h-full flex items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+          <section className='w-full my-[20px]  sm:my-[40px] h-auto md:h-full flex items-center justify-center px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
 
             <Carousel autoPlay={true} interval={2000} showThumbs={false} showArrows={false} showStatus={false} infiniteLoop={true} className='relative h-full w-full '>
               <div className='h-full' >
@@ -70,7 +70,7 @@ const Page = ({ params }) => {
 
 
 
-          <section className='w-full my-[20px] sm:my-[80px] h-full flex items-center justify-center flex-col gap-[40px] px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+          <section className='w-full my-[20px] sm:my-[80px] h-full flex items-center justify-center flex-col gap-[40px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
 
             <motion.div initial={{ opacity: 0, x: -300 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -133,7 +133,7 @@ const Page = ({ params }) => {
 
 
 
-          <section className='w-full py-[80px] h-full flex items-center justify-center flex-col gap-[0px] px-[20px] bg-[#FFFAFA] xsm:px-[40px] mx-auto'>
+          <section className='w-full py-[80px] h-full flex items-center justify-center flex-col gap-[0px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] bg-[#FFFAFA] mx-auto'>
             <motion.div initial={{ opacity: 0, y: -300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, type: 'tween' }} className='w-full'>

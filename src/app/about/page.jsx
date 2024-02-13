@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className='max-w-[1500px]  overflow-hidden h-full mx-auto'>
       {/* ---- --- text-section  */}
-      <section className='w-full mt-[80px] h-full px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+      <section className='w-full mt-[80px] h-full px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[30px] sm:text-[35px] mdd:text-[50px] lg:text-[60px] xll:text-[72px] leading-normal lg:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>
@@ -25,7 +25,7 @@ const page = () => {
 
 
       {/* ---------- about section text ---------  */}
-      <section className='w-full mt-[40px] h-full flex items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+      <section className='w-full mt-[40px] h-full flex items-center justify-center px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
 
         <motion.div initial={{ opacity: 0, y: 200, scale: 0 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -37,7 +37,7 @@ const page = () => {
 
 
       {/* ---------- decision Maker---------  */}
-      <section className='w-full mt-[20px] h-full flex flex-col items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+      <section className='w-full mt-[20px] h-full flex flex-col items-center justify-center px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300, scale: 0 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1, type: 'tween' }} className='text-[30px] xsm:text-[40px] sm:text-[48px] my-[30px] text-center sm:text-left w-full font-Montserrat text-[#2E2E2E] font-normal'>The <span className='font-semibold'>decision makers</span></motion.h2>
@@ -73,7 +73,7 @@ const page = () => {
 
       {/* ---------- our team work ---------  */}
 
-      <section className='w-full my-[2rem] mt-[20px] h-full flex flex-col items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
+      <section className='w-full my-[2rem] mt-[20px] h-full flex flex-col items-center justify-center px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'tween' }} className='text-[30px] xsm:text-[40px] sm:text-[48px] my-[30px] text-center sm:text-left w-full font-Montserrat text-[#2E2E2E] font-normal'>The <span className='font-semibold'>team at work</span></motion.h2>
