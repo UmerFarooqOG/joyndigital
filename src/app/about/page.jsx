@@ -23,7 +23,7 @@ const page = () => {
         </div>
       </section>
 
-
+x
       {/* ---------- about section text ---------  */}
       <section className='w-full mt-[40px] h-full flex items-center justify-center px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
 

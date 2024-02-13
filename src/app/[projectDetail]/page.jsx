@@ -44,12 +44,12 @@ const Page = ({ params }) => {
               transition={{ duration: 1, type: 'tween' }} className='text-[#2958A5] text-[20px] xsm:text-[40px] font-[500] font-Noto'>{name}</motion.h5>
             <motion.h2 initial={{ opacity: 0, x: -300 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[50px] sm:text-[60px] mdd:text-[82px] leading-normal sm:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>{heading}</motion.h2>
+              transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[40px] sm:text-[52px] lg:text-[62px] xll:text-[72px] leading-normal sm:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>{heading}</motion.h2>
             <div className='w-full flex-col my-[30px] flex items-end justify-start sm:justify-end'>
               <div className=' w-full mdd:w-[60%]'>
                 <motion.p initial={{ opacity: 0, x: 300 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, type: 'tween' }} className='text-[#7F7F7F] font-Noto text-[17px] xsm:text-[20px] sm:text-[28px] leading-normal sm:leading-[50px]'>{heroP}</motion.p>
+                  transition={{ duration: 1, type: 'tween' }} className='text-[#7F7F7F] font-Noto text-[17px] xsm:text-[18px] lg:text-[20px] xxl:text-[24px] leading-normal sm:leading-[34px]'>{heroP}</motion.p>
               </div>
             </div>
           </section>
@@ -92,7 +92,7 @@ const Page = ({ params }) => {
 
               <p className='text-[#7F7F7F] text-[10px] xsm:text-[14px] mdd:text-[18px] xlb:text-[20px] font-normal w-full text-center leading-[32px] sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%] font-Noto'>{sec3p2}</p>
             </motion.div>
-            
+
 
 
             {
@@ -108,22 +108,20 @@ const Page = ({ params }) => {
             }
             <motion.div initial={{ opacity: 0, x: -300 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] items-center justify-center sm:items-start'>
-              <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1 text-[20px] xsm:text-[30px] sm:text-[25px] mdd:text-[30px] lg:text-[45px] mt-[-10px] lg:mt-[-20px]  xll:text-[54px]'>
-              Our Tech <span className='font-bold'>Capabilities</span>
-              </h5>
+              transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] items-center justify-center md:justify-end sm:items-start'>
 
-             
+
+
               <motion.div initial={{ opacity: 0, x: 300 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap mt-[40px] py-[30px] items-center gap-[60px] w-full text-center sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%]'>
-                { useLogos.map((i,index) =>{
-                  
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap mt-[40px] py-[30px] items-center gap-[60px] w-full text-center sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%]'>
+                {useLogos.map((i, index) => {
+
                   return <p key={index} className='projDetailLogo'>{i.logo}</p>
-                
-              }) }
-                
-            </motion.div>
+
+                })}
+
+              </motion.div>
             </motion.div>
 
 
@@ -141,19 +139,16 @@ const Page = ({ params }) => {
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, type: 'tween' }} style={bglg === "bluelg" ? blueGradient : redGradient} className='flex flex-col mdd:flex-row  overflow-hidden rounded-[30px] min-h-[40vh] h-full mdd:h-[75vh] w-full relative place-content-center items-center justify-start'>
+              transition={{ duration: 1, type: 'tween' }} style={bglg === "bluelg" ? blueGradient : redGradient} className='flex flex-col mdd:flex-row  overflow-hidden rounded-[30px] h-full mdd:h-[500px] xxl-h-[520px] w-full relative place-content-center items-center justify-start'>
 
-
-              <div className=' rounded-[20px] mdd:rounded-e-[0px] rounded-s-[20px] mdd:rounded-s-[30px] h-full w-full my-[40px] items-center mdd:items-start justify-center pl-0 mdd:pl-[3rem] mdd:w-[40%]  flex flex-col gap-[20px] px-[20px] ssm:px-[30px] py-[20px] ssm:py-[30px]  '>
+              <div className=' rounded-[20px] mdd:rounded-e-[0px] rounded-s-[20px] mdd:rounded-s-[30px] h-full w-full my-[40px] items-center mdd:items-start justify-center px-10 md:pl-[60px] lg:pl-[120px] mdd:w-[40%]  flex flex-col gap-[16px]  py-[20px] mdd:py-[80px]  '>
                 <Image src={logo} width={100} height={100} className='w-[240px] h-[70px]' alt='Logo image' />
-                <h3 className=' text-[18px] ssm:text-[24px] xsm:text-[28px] text-center mdd:text-left lg:text-[32px] font-Montserrat font-[500] text-white'><span className='font-bold'>{sec4headingB}</span> <br /> {sec4headingM} <br /> {sec4headingM1}</h3>
+                <h3 className=' text-[18px] ssm:text-[20px] xsm:text-[24px] text-center mdd:text-left lg:text-[28px] font-Montserrat lg:leading-[38px] font-[500] text-white'><span className='font-bold'>{sec4headingB}</span>  {sec4headingM}  {sec4headingM1}</h3>
                 <hr className={`border-[1px] w-[90px] ${bglg === 'redlg' ? 'border-[#DB4C4D]' : 'border-[#2957A7] '} `} />
 
                 <Link className="text-[#ffffff]  text-[14px] xsm:text-[16px] font-semibold flex items-center gap-[4px]" href={`/${npid}`} > View case <Image src={`${bglg === 'redlg' ? '/assets/redarrow.png' : '/assets/Arrow.svg'}`} width={100} height={100} alt='arrow' className=' w-[14px] xsm:w-[33px] h-[14px]' /> </Link>
-
-
               </div>
-              <div className='overflow-hidden flex items-center justify-center h-full rounded-[20px] rounded-s-[20px] mdd:rounded-s-[0px]  rounded-e-[30px]  px-[5px] ssm:px-[20px] py-[20px] ssm:py-[10px]   bg-l flex-1 '>
+              <div className='overflow-hidden flex items-center justify-center h-full rounded-[20px] rounded-s-[20px] mdd:rounded-s-[0px]  rounded-e-[30px]   px-10  md:pr-[60px] lg:pr-[120px] py-[20px] mdd:py-[80px]   bg-l flex-1 '>
                 <Image className=' w-full h-full ssm:w-[90%] ssm:h-auto lg:w-[700px] lg:h-[400px]' src={sec4img} width={1000} height={1000} alt='product image' />
               </div>
             </motion.div>
