@@ -11,14 +11,14 @@ const page = () => {
       <section className='w-full mt-[80px] h-full px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[50px] sm:text-[60px] mdd:text-[82px] leading-normal sm:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-[500]'>
+          transition={{ duration: 1, type: 'tween' }} className='text-[24px] ssm:text-[28px] xsm:text-[30px] sm:text-[35px] mdd:text-[50px] lg:text-[60px] xll:text-[72px] leading-normal lg:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>
           <span className='font-bold'>Accelerating Innovation:</span> <br /> Where your business goals <br /> transform into exceptional <br /> products.
         </motion.h2>
         <div className='w-full flex-col my-[30px] flex items-end justify-start sm:justify-end'>
           <div className=' sm:w-auto w-full flex justify-end'>
             <motion.p initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={tranitiom} className='text-[#7f7f7f] font-Noto  text-[17px] xsm:text-[20px] sm:text-[28px] leading-normal sm:leading-[50px] '>Revolutionizing product delivery with AI Precision: <br /> From  Development to Data-Driven Market Validation.</motion.p>
+              transition={tranitiom} className='text-[#7F7F7F] font-Noto text-[18px] md:text-[22px] xll:text-[24px] leading-normal sm:leading-[38px] '>Revolutionizing product delivery with AI Precision: <br /> From  Development to Data-Driven Market Validation.</motion.p>
           </div>
         </div>
       </section>
@@ -29,9 +29,9 @@ const page = () => {
 
         <motion.div initial={{ opacity: 0, y: 200, scale: 0 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={tranitiom} className=' w-full mdd:w-[90%] lg:w-[80%] px-[20px] mdd:px-[40px] lg:px-[80px] py-[3rem] mdd:py-[4rem] rounded-[30px] bg-white'>
+          transition={tranitiom} className=' w-full mdd:w-[90%] lg:w-[85%] px-[20px] mdd:px-[40px] lg:px-[80px] py-[3rem] mdd:py-[4rem] rounded-[30px] bg-white'>
           <h2 className='text-[#2E2E2E] font-[400] text-center font-Montserrat text-[30px] xsm:text-[60px]'>About us</h2>
-          <p className='text-[#7f7f7f] text-[17px] xsm:text-[20px] sm:text-[28px] leading-normal sm:leading-[50px] mt-[10px] tracking-[0.5px] font-[400] font-Noto'>We at the Joyn Group are proud to be at the forefront of the technology revolution. Our core purpose is to provide our clients with the best possible solutions in shape of products, solutions, services and consultancies to keep pace with technology.</p>
+          <p className='text-[#7f7f7f] text-[17px] xsm:text-[18px] xll:text-[24px] leading-normal xll:leading-[38px] mt-[10px]  font-[400] font-Noto'>We at the Joyn Group are proud to be at the forefront of the technology revolution. Our core purpose is to provide our clients with the best possible solutions in shape of products, solutions, services and consultancies to keep pace with technology.</p>
         </motion.div>
       </section>
 
@@ -40,7 +40,7 @@ const page = () => {
       <section className='w-full mt-[20px] h-full flex flex-col items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300, scale: 0 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
-          transition={{ duration: 1, type: 'tween' }} className='text-[30px] xsm:text-[40px] sm:text-[60px] my-[30px] text-center sm:text-left w-full font-Montserrat text-[#2E2E2E] font-normal'>The <span className='font-semibold'>decision makers</span></motion.h2>
+          transition={{ duration: 1, type: 'tween' }} className='text-[30px] xsm:text-[40px] sm:text-[48px] my-[30px] text-center sm:text-left w-full font-Montserrat text-[#2E2E2E] font-normal'>The <span className='font-semibold'>decision makers</span></motion.h2>
         <div className='w-full grid grid-cols-1f  sm:grid-cols-2f mdd:grid-cols-3f gap-[20px] lg:gap-[80px] place-content-center place-items-center justify-center items-center'>
 
           <motion.div initial={{ opacity: 0, x: -300, scale: 1 }}
@@ -76,7 +76,7 @@ const page = () => {
       <section className='w-full my-[2rem] mt-[20px] h-full flex flex-col items-center justify-center px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='text-[30px] xsm:text-[40px] sm:text-[60px] my-[30px] text-center sm:text-left w-full font-Montserrat text-[#2E2E2E] font-normal'>The <span className='font-semibold'>team at work</span></motion.h2>
+          transition={{ duration: 1, type: 'tween' }} className='text-[30px] xsm:text-[40px] sm:text-[48px] my-[30px] text-center sm:text-left w-full font-Montserrat text-[#2E2E2E] font-normal'>The <span className='font-semibold'>team at work</span></motion.h2>
 
         <div className='w-full flex gap-[20px] flex-col items-center justify-center'>
           <motion.div initial={{ opacity: 0, x: -300 }}

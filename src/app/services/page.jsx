@@ -21,7 +21,7 @@ const page = () => {
       <section className='w-full mt-[80px]  px-[20px] xsm:px-[40px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className=' text-[44px] xsm:text-[55px] md:text-[50px] mdd:text-[80px] xlb:text-[102px] w-full text-[#2E2E2E] font-Montserrat font-semibold'>The services <br /> we offer</motion.h2>
+          transition={{ duration: 1, type: 'tween' }} className=' text-[30px] tracking-normal ssm:text-[35px] xsm:text-[40px] sm:text-[55px] mdd:text-[70px] lg:text-[80px] xll:text-[92px] leading-normal lg:leading-[100px] w-full text-[#2E2E2E] font-Montserrat font-bold'>The services <br /> we offer</motion.h2>
       </section>
 
 
@@ -35,19 +35,19 @@ const page = () => {
             <Image src="/assets/services/services1.png" className=' w-[50px] xsm:w-[80px] sm:w-[100px] text-center h-auto mb-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
 
           </div>
-          <h5 className='text-[#2e2e2e] text-[30px] leading-normal mdd:leading-[80px] ssm:text-[40px] mdd:text-[50px] xlb:text-[60px] font-[600] w-full sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%] font-Montserrat'>We create custom web & mobile digital products that inspire and engage your customers</h5>
+          <h5 className='text-[#2e2e2e] text-[25px] leading-normal mdd:leading-[72px] ssm:text-[30px] mdd:text-[40px] xll:text-[50px] font-[600] w-full sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%] font-Montserrat'>We create custom web & mobile digital products that inspire and engage your customers</h5>
         </motion.div>
 
 
         <motion.div initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] justify-center sm:items-start'>
-          <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1   sm:text-start text-[45px] mt-[-10px] lg:mt-[-20px]  xlb:text-[60px]'>
+          <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1   sm:text-start text-[40px] mt-[-10px] lg:mt-[-20px]  xlb:text-[48px]'>
             Product <span className='font-bold'> <br />Design</span>
           </h5>
 
           <div className='flex flex-col sm:w-[65%]  lg:w-[60%] xll:w-[65%]'>
-            <p className='text-[#7F7F7F] text-[18px] leading-[60px] xlb:leading-[73px] xsm:text-[20px] mdd:text-[24px] xlb:text-[28px] font-normal w-full sm:text-left font-Noto'>
+            <p className='text-[#7F7F7F] text-[18px] leading-[40px] xll:leading-[50px] xsm:text-[20px] mdd:text-[24px] xll:text-[28px] font-normal w-full sm:text-left font-Noto'>
               Product branding and design guidelines <br />
               User research <br />
               Customer journey mapping <br />
@@ -60,7 +60,10 @@ const page = () => {
         </motion.div>
 
 
-        <div className='w-full flex items-end justify-end'>
+        <div className='w-full flex items-center justify-end'>
+        <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1   sm:text-start text-[40px] mt-[-10px] lg:mt-[-20px]  xll:text-[48px]'>
+            Our Tech<span className='font-bold'> <br />Capabilities</span>
+          </h5>
 
           <div className='flex flex-col w-full sm:w-[70%] mt-[40px] py-[30px] gap-[20px]'>
             <motion.div initial={{ opacity: 0, x: 200 }}

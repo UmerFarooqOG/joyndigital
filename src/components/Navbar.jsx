@@ -20,9 +20,9 @@ const Navbar = () => {
 
   return (
    
-    <nav className=' max-w-[1440px] sticky top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] px-[60px] lg:px-[90px] xlb:px-[120px] max mx-auto py-[1rem]  backdrop-blur-lg h-auto flex justify-between items-center'>
-    
-      <Link href={'/'} className='relative' >
+    <nav className=' sticky top-0 w-full bg-[#F2EEEE] opacity-[0.9]  z-[100] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] max mx-auto py-[1rem]  backdrop-blur-lg h-auto flex justify-between items-center'>
+    <div className='h-full flex justify-between items-center w-full max-w-[1440px] mx-auto '>
+    <Link href={'/'} className='relative' >
         <Image
           src="/assets/joyn-png.png"
           width={1000}
@@ -59,6 +59,7 @@ const Navbar = () => {
       
       </ul>
       <CiMenuFries onClick={() => setOpen(true)} className="text-[30px] cursor-pointer inline-block sm:hidden" />
+    </div>
     </nav>
   )
 }
