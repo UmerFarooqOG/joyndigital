@@ -19,7 +19,6 @@ const Hero = () => {
 
     const [backgroundIndex, setBackgroundIndex] = useState(0);
     const [contentIndex, setContentIndex] = useState(0);
-    const [rotatee, setRotate] = useState(0);
 
     const [rotation, setRotation] = useState(0);
 
