@@ -9,9 +9,9 @@ const Footer = () => (
     <div className=" flex-wrap px-[20px] xxm:px-[40px]  md:flex-nowrap flex gap-[5px] xxm:gap-[10px] mdd:gap-[30px] lg:gap-[50px] items-start justify-start md:justify-center w-full">
       <div className=" w-full xsm:w-[60%] md:w-[45%] mdd:w-[40%] flex flex-col gap-[20px]">
         <div className="flex items-center justify-start gap-[10px]">
-         <Link href="" > <FaLinkedinIn className="text-[#0077B5] hover:text-[#1d1d1e] duration-500 hover:scale-110 text-[23px]" /></Link>
-         <Link href="" ><FiMail className="text-[23px] hover:text-[#1d1d1e] duration-500 hover:scale-110 text-[#656B70]" /></Link>
-         <Link href="" > <FiPhone className="text-[23px] hover:text-[#1d1d1e] duration-500 hover:scale-110 text-[#656B70]" /></Link>
+         <Link target="_blank" href="https://www.linkedin.com/company/digitaljoyn/" > <FaLinkedinIn className="text-[#0077B5] hover:text-[#1d1d1e] duration-500 hover:scale-110 text-[23px]" /></Link>
+         <Link href="mailto:info@info@joyn.com" ><FiMail className="text-[23px] hover:text-[#1d1d1e] duration-500 hover:scale-110 text-[#656B70]" /></Link>
+         <Link href="tel:00 92 518446205" > <FiPhone className="text-[23px] hover:text-[#1d1d1e] duration-500 hover:scale-110 text-[#656B70]" /></Link>
         </div>
         <p className="text-[#656B70] text-[14px] lg:text-[16px] font-Noto font-[500] mb-[20px]">HQ ADDRESS</p>
         <p className="text-[#656B70] text-[12px] lg:text-[14px] font-[500]">5117 Joseph St Lewisville, TX 75056,
