@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const page = () => {
   const tranitiom = { duration: 2, type: 'spring' }
   return (
-    <div className='max-w-[1500px]  overflow-hidden h-full mx-auto'>
+    <div className='max-w-[1440px]  overflow-hidden h-full mx-auto'>
       {/* ---- --- text-section  */}
       <section className='w-full mt-[80px] h-full px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -300 }}

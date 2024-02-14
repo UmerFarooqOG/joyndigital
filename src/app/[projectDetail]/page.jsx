@@ -36,7 +36,7 @@ const Page = ({ params }) => {
   return (
     <>
       {loader ? <Loading /> :
-        <div className='max-w-[1400px] overflow-hidden w-full mx-auto'>
+        <div className='max-w-[1440px] overflow-hidden w-full mx-auto'>
           {/* ---- --- text-section  */}
           <section className='w-full mt-[80px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
             <motion.h5 initial={{ opacity: 0, x: -300 }}

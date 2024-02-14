@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => (
   <footer className=' px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[4rem] bg-white opacity-[0.8] w-full flex items-center flex-col justify-start'>
-    <div className="w-full h-full max-w-[1400px] mx-auto">
+    <div className="w-full h-full max-w-[1440px] mx-auto">
     <div className=" flex-wrap px-[20px] xxm:px-[40px]  md:flex-nowrap flex gap-[5px] xxm:gap-[10px] mdd:gap-[30px] lg:gap-[50px] items-start justify-start md:justify-center w-full">
       <div className=" w-full xsm:w-[60%] md:w-[45%] mdd:w-[40%] flex flex-col gap-[20px]">
         <div className="flex items-center justify-start gap-[10px]">
