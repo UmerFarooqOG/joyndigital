@@ -44,11 +44,11 @@ const page = () => {
         <ProtfolioCard logo={protData[2].logo} spanTitle={protData[2].spanTitle} title={protData[2].title} desc={protData[2].desc} image={protData[2].image} id={3} />
 
 
-        <motion.button  initial={{opacity : 0 , y:80 ,scale:0.6  }}
+        {/* <motion.button  initial={{opacity : 0 , y:80 ,scale:0.6  }}
               whileInView={{opacity : 1,y:0 ,scale:1   }}
               transition={{ duration: 0 ,type:'tween'}} className='px-[30px] btn font-Montserrat bg-transparent font-semibold text-[#2957A7] hover:text-[#fff] py-[10px] text-[20px] rounded-[40px] border-[#2957A7] border-[1px]'>
           see more work
-        </motion.button>
+        </motion.button> */}
       </div>
 
     </section>
