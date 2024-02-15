@@ -21,6 +21,17 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
 .scrollbar-track-x{
   display: none !important;
 }

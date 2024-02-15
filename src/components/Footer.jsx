@@ -35,8 +35,8 @@ const Footer = () => (
         <Link className="text-[#656B70] hover:text-[#1d1d1e] duration-500  text-[12px] lg:text-[14px] font-Noto font-[500]" href={'/'} >AI / ML Solutions</Link>
       </div>
       <div className="flex flex-col md:mt-0 mt-[30px] w-[100%] xxm:w-[30%] md:w-[20%] gap-4 items-start">
-        <p className="text-[#656B70] text-[14px] lg:text-[16px] font-Noto font-[500] mb-[20px]">CAREERS</p>
-        <Link className="text-[#656B70] hover:text-[#1d1d1e] duration-500 text-[12px] lg:text-[14px] font-Noto font-[500]" href={'/'} >Job Openings</Link>
+        <p className="text-[#656B70] text-[14px] lg:text-[16px] font-Noto font-[500] mb-[20px]">CONTACT</p>
+        <Link className="text-[#656B70] hover:text-[#1d1d1e] duration-500 text-[12px] lg:text-[14px] font-Noto font-[500]" href={'/contact'} >Contact</Link>
       </div>
       
     
@@ -44,8 +44,8 @@ const Footer = () => (
 
     <div className="w-full flex flex-wrap  items-center mt-[30px] justify-center md:justify-end gap-[5px] xxm:gap-[10px]">
       
-        <Link href={'/'} className=" text-[12px] xxm:text-[14px] underline font-[400] font-Noto text-[#656B70]" >Terms & Conditions</Link>
-        <Link href={'/'} className=" text-[12px] xxm:text-[14px] underline font-[400] font-Noto text-[#656B70]" > Privacy Policy </Link>
+        <p className=" text-[12px] xxm:text-[14px] underline font-[400] font-Noto text-[#656B70]" >Terms & Conditions</p>
+        <p className=" text-[12px] xxm:text-[14px] underline font-[400] font-Noto text-[#656B70]" > Privacy Policy </p>
         <p className=" text-[12px] xsm:text-center xxm:text-[14px] font-[400] font-Nato text-[#656B70]" > Copyrights@2024 All Rights Reserved</p>
     
     </div>
