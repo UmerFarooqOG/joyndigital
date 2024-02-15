@@ -28,9 +28,9 @@ const Page = () => {
 }, []);
 
   return (
-    <div className='max-w-[1440px] overflow-hidden w-full mx-auto'>
+    <div className=' overflow-hidden w-full mx-auto'>
       {/* ---- --- text-section  */}
-      <section className='w-full mt-[80px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
+      <section className='max-w-[1440px] w-full mt-[80px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
         <motion.h2 initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'tween' }} className=' text-[35px] tracking-normal ssm:text-[40px] xsm:text-[45px] sm:text-[65px] mdd:text-[70px] lg:text-[90px] xll:text-[102px] leading-normal lg:leading-[120px] w-[70%] text-[#2E2E2E] font-Montserrat font-bold'>The services we offer</motion.h2>
@@ -38,11 +38,11 @@ const Page = () => {
 
 
 
-      <section className='w-full my-[20px] sm:my-[80px] h-full flex items-center justify-center flex-col px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
+      <section className='max-w-[1440px] w-full my-[20px] sm:my-[10px] h-full flex items-center justify-center flex-col px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
 
         <motion.div initial={{ opacity: 0, x: -180 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center sm:items-start'>
+          transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start sm:items-start'>
           <div className='flex flex-1 items-center justify-start'>
 
 
@@ -53,7 +53,7 @@ const Page = () => {
 
         <motion.div initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='w-full mt-10 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center items-center'>
+          transition={{ duration: 1, type: 'tween' }} className='w-full mt-20 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start items-start'>
           <h5 className='text-[#2E2E2E] leading-normal xlb:leading-[58px] font-Montserrat font-[500] flex-1   sm:text-start text-[40px] mt-[-10px] lg:mt-[-20px] xll:text-[48px]'>
             Product <span className='font-bold'> Design</span>
           </h5>
@@ -75,7 +75,7 @@ const Page = () => {
 
         <motion.div initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='w-full mt-10 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center items-center'>
+          transition={{ duration: 1, type: 'tween' }} className='w-full mt-32 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start items-start'>
           <h5 className='text-[#2E2E2E] leading-normal xlb:leading-[58px] font-Montserrat font-[500] flex-1   sm:text-start text-[40px] mt-[-10px] lg:mt-[-20px]  xll:text-[48px]'>
             Product <span className='font-bold'> Development</span>
           </h5>
@@ -95,8 +95,8 @@ const Page = () => {
       
 
 
-        <div className='w-full flex mt-10 flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center items-center'>
-          <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1   sm:text-start text-[40px]  xll:text-[48px]'>
+        <div className='w-full flex mt-20 flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center items-start'>
+          <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1 sm:text-start text-[40px]  xll:text-[48px]'>
             Our Tech<span className='font-bold'> Capabilities</span>
           </h5>
 
@@ -130,9 +130,11 @@ const Page = () => {
 
       <motion.div initial={{ opacity: 0, y: 220 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: 'tween' }} style={linbg} className='w-full h-auto sm:max-h-[300px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[80px]'>
+        transition={{ duration: 1, type: 'tween' }} style={linbg} className='mx-auto'>
+       
+         
 
-        <div className='w-full flex-wrap gap-[20px] h-full flex justify-between items-center'>
+        <div className='w-full max-w-[1440px] mx-auto flex-wrap gap-[20px] h-full flex justify-between items-center sm:max-h-[300px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[80px]'>
           <div className='' >
             <h2 className='font-Montserrat font-bold text-[25px] xsm:text-[30px] md:text-[50px] xll:text-[57px]  text-[#fff]'>Partner with us</h2>
             <p className='font-Noto text-[12px] xsm:text-[14px] leading-normal xll:leading-[30px] mdd:text-[18px] xll:text-[20px] mt-[9px] text-[#F2EEEE]'>We’d love to learn more about your digital project and see how we can help you</p>
@@ -144,6 +146,7 @@ const Page = () => {
             </Link>
           </div>
         </div>
+        
 
       </motion.div>
 
