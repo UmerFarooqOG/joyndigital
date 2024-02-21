@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^14.1.0",
     "@tsparticles/preact": "^3.0.0",
     "@vercel/speed-insights": "^1.0.9",
     "framer-motion": "^10.18.0",
