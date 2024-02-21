@@ -7,9 +7,9 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic'; // Import dynamic function from next/dynamic
 
 
-const ProtfolioCardReverse = dynamic(() => );
-const ProtfolioCard = dynamic(() => import('@/components/ProtfolioCard'));
-const Hero = dynamic(() => import('@/components/Hero.jsx'));
+const ProtfolioCardReverse = dynamic(() => import('@/components/ProtCardReverse') , {ssr:false});
+const ProtfolioCard = dynamic(() => import('@/components/ProtfolioCard') , {ssr:false});
+const Hero = dynamic(() => import('@/components/Hero.jsx') , {ssr:false});
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
   
