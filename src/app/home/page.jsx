@@ -5,11 +5,10 @@ import { protData } from '@/app/constant/NavLink';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic'; // Import dynamic function from next/dynamic
+import ProtfolioCard from '@/components/ProtfolioCard';
+import ProtfolioCardReverse from '@/components/ProtCardReverse';
+import Hero from '@/components/Hero';
 
-
-const ProtfolioCardReverse = dynamic(() => import('@/components/ProtCardReverse'));
-const ProtfolioCard = dynamic(() => import('@/components/ProtfolioCard'));
-const Hero = dynamic(() => import('@/components/Hero.jsx'));
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
   
