@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^14.1.0",
     "@tsparticles/preact": "^3.0.0",
     "@vercel/speed-insights": "^1.0.9",
     "framer-motion": "^10.18.0",
@@ -24,6 +25,7 @@
     "react-spinners": "^0.13.8",
     "react-toastify": "^10.0.4",
     "react-tsparticles": "^2.12.2",
+    "sharp": "^0.33.2",
     "swiper": "^11.0.5",
     "tsparticles": "^3.2.1",
     "tsparticles-slim": "^2.12.0"
