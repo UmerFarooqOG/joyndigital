@@ -58,8 +58,8 @@ const Hero = () => {
                             style={{ transform: `rotate(${rotation}deg)` }}
                             src={images[contentIndex]}
                             alt='circle image'
-                            width={1000}
-                            height={1000}
+                            width={500}
+                            height={400}
                             className='absolute left-0 top--100px w-700 h-auto'
                             loading="lazy"
                         />
