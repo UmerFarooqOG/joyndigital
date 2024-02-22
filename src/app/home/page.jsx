@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { protData } from '@/app/constant/NavLink';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic'
 
 const ProtfolioCardReverse = dynamic(() => import('@/components/ProtCardReverse'), { ssr: false });
 const ProtfolioCard = dynamic(() => import('@/components/ProtfolioCard'), { ssr: false });
