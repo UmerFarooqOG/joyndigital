@@ -1,5 +1,6 @@
 'use client'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,6 +8,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation';
 
+
+const tranitiom = { duration: 2, type: 'spring' }
+
+const linbg = {
+    background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)'
+}
 
 const Page = () => {
 
@@ -177,39 +184,23 @@ const Page = () => {
         }
     }
 
-    const [isMobile, setIsMobile] = useState(false);
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        handleResize();
-        window.addEventListener('resize', handleResize);
-
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-    const htini = !isMobile ? { y: 200, scale: 1 } : { y: 0, scale: 1 }
-    const htwhilein = !isMobile ? { y: 0, scale: 1 } : { y: 0, scale: 1 };
-
-    const tranitiom = { duration: 2, type: 'spring' }
-
     return (
         <div className='max-w-[1440px] overflow-hidden w-full mx-auto'>
             {/* ---- --- text-section  */}
             <section className='w-full mt-[80px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px]  py-[2rem] mx-auto'>
 
-                <motion.h2 initial={htini}
-                    whileInView={htwhilein}
-                    transition={tranitiom} className='  text-[45px] xsm:text-[85px] mt-[-10px] lg:mt-[-20px]  xll:text-[102px] leading-normal xsm:leading-[73px] w-full text-[#2E2E2E] font-Montserrat font-semibold'>Let’s talk</motion.h2>
+                <motion.h2 initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, type: 'tween' }} className='  text-[45px] xsm:text-[85px] mt-[-10px] lg:mt-[-20px]  xll:text-[102px] leading-normal xsm:leading-[73px] w-full text-[#2E2E2E] font-Montserrat font-semibold'>Let’s talk</motion.h2>
             </section>
 
 
 
             <main className='w-full my-[20px] sm:my-[20px] h-full flex items-center justify-center flex-col gap-[60px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] mx-auto'>
 
-                <motion.div initial={htini}
-                    whileInView={htwhilein}
-                    transition={tranitiom} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] justify-center sm:items-start'>
+                <motion.div initial={{ opacity: 0, x: -180 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] justify-center sm:items-start'>
                     <div className='flex flex-1 items-center justify-start'>
 
 
@@ -217,43 +208,43 @@ const Page = () => {
                     <h5 className='text-[#2e2e2e] text-[20px] ssm:text-[25px] xsm:text-[35px] mdd:text-[45px] mdd:leading-[72px] xll:text-[50px] font-[600] w-full sm:text-left sm:w-[65%]  lg:w-[60%] xll:w-[65%] font-Montserrat'>We&apos;d love to learn more about your project. Just fill out the form below and youll hear from us.</h5>
                 </motion.div>
 
-                <motion.form onSubmit={handle} initial={htini}
-                    whileInView={htwhilein}
-                    transition={tranitiom} action="" className='bg-[#FFFAFA] rounded-[30px] px-[10px] xsm:px-[30px] py-[70px] flex-col  flex items-center justify-center w-[100%] sm:w-[85%]'>
+                <motion.form onSubmit={handle} initial={{ opacity: 0, x: -180 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, type: 'tween' }} action="" className='bg-[#FFFAFA] rounded-[30px] px-[10px] xsm:px-[30px] py-[70px] flex-col  flex items-center justify-center w-[100%] sm:w-[85%]'>
                     <h2 className='text-[#2E2E2E] mt-[20px] text-[20px] ssm:text-[25px] xsm:text-[40px] font-Montserrat font-[600]'>Project Enquiry</h2>
 
                     <div className='mt-[50px] flex flex-col gap-[10px] w-[100%] sm:w-[55%]'>
 
 
-                        <motion.div initial={htini}
-                            whileInView={htwhilein}
-                            transition={tranitiom} className='w-full h-[80px]'>
+                        <motion.div initial={{ opacity: 0, x: -180 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, type: 'tween' }} className='w-full h-[80px]'>
                             <label className='font-Montserrat font-semibold'>Full name *</label>
                             <input type="text" className='w-full border-b-2 border-[#7F7F7F] font-Montserrat text-[#2E2E2E] mt-[10px] outline-none bg-transparent focus:border-[#2957A7]' name='full name' value={regValue.name} onChange={(e) => setRegValue((prev) => ({ ...prev, name: e.target.value }))} required />
                             {errors.nameEr && <span style={{ color: 'red' }}>{errors.nameEr}</span>}
                         </motion.div>
                         {/* ---- email  */}
-                        <motion.div initial={htini}
-                            whileInView={htwhilein}
-                            transition={tranitiom} className='w-full h-[80px]'>
+                        <motion.div initial={{ opacity: 0, x: 180 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, type: 'tween' }} className='w-full h-[80px]'>
                             <label className='font-Montserrat font-semibold'>Email *</label>
                             <input type="email" className='w-full border-b-2 border-[#7F7F7F] font-Montserrat text-[#2E2E2E] mt-[10px] outline-none bg-transparent focus:border-[#2957A7]' name='Email' value={regValue.email} onChange={(e) => setRegValue((prev) => ({ ...prev, email: e.target.value }))} required />
                             {errors.emailEr && <span style={{ color: 'red' }}>{errors.emailEr}</span>}
                         </motion.div>
 
                         {/* ---- Company name  */}
-                        <motion.div initial={htini}
-                            whileInView={htwhilein}
-                            transition={tranitiom} className='w-full h-[80px]'>
+                        <motion.div initial={{ opacity: 0, x: -180 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, type: 'tween' }} className='w-full h-[80px]'>
                             <label className='font-Montserrat font-semibold'>Company name *</label>
                             <input type="text" className='w-full border-b-2 border-[#7F7F7F] font-Montserrat text-[#2E2E2E] mt-[10px] outline-none bg-transparent focus:border-[#2957A7]' name='Company name' value={regValue.companyName} onChange={(e) => setRegValue((prev) => ({ ...prev, companyName: e.target.value }))} required />
                             {errors.companyNameEr && <span style={{ color: 'red' }}>{errors.companyNameEr}</span>}
                         </motion.div>
 
                         {/* ---- Job Title */}
-                        <motion.div initial={htini}
-                            whileInView={htwhilein}
-                            transition={tranitiom} className='w-full h-[80px]'>
+                        <motion.div initial={{ opacity: 0, x: 180 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, type: 'tween' }} className='w-full h-[80px]'>
                             <label className='font-Montserrat font-semibold'>Job Title *</label>
                             <input type="text" className='w-full border-b-2 border-[#7F7F7F] font-Montserrat text-[#2E2E2E] mt-[10px] outline-none bg-transparent focus:border-[#2957A7]' name='Job Title' value={regValue.jobTitle} onChange={(e) => setRegValue((prev) => ({ ...prev, jobTitle: e.target.value }))} required />
                             {errors.jobTitleEr && <span style={{ color: 'red' }}>{errors.jobTitleEr}</span>}
@@ -262,9 +253,9 @@ const Page = () => {
 
                         {/* ---- Message */}
 
-                        <motion.div initial={htini}
-                            whileInView={htwhilein}
-                            transition={tranitiom} className='w-full '>
+                        <motion.div initial={{ opacity: 0, x: -180 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, type: 'tween' }} className='w-full '>
                             <label className='font-Montserrat font-semibold'>Message *</label>
                             <textarea className='w-full resize-none border-b-2 border-[#7F7F7F] font-Montserrat text-[#2E2E2E] mt-[10px] min-h-[140px] outline-none bg-transparent focus:border-[#2957A7]' name="Message" value={regValue.message} onChange={(e) => setRegValue((prev) => ({ ...prev, message: e.target.value }))} required></textarea>
                             {errors.messageEr && <span style={{ color: 'red' }}>{errors.messageEr}</span>}
@@ -281,9 +272,9 @@ const Page = () => {
                 </motion.form>
 
 
-                <motion.div initial={htini}
-                    whileInView={htwhilein}
-                    transition={tranitiom} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] items-center justify-center my-[98px] sm:items-start'>
+                <motion.div initial={{ opacity: 0, x: -300 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col sm:flex-row  gap-[10px] mdd:gap-[30px] items-center justify-center my-[98px] sm:items-start'>
                     <h5 className='text-[#2E2E2E] font-Montserrat font-[500] flex-1 text-[35px] xsm:text-[45px] mt-[-10px] lg:mt-[-20px]  xll:text-[54px] leading-normal xsm:leading-[73px]'>
                         Get in <span className='font-bold'>touch</span>
                     </h5>
