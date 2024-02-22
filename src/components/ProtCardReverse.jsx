@@ -20,14 +20,14 @@ const ProtfolioCardReverse = ({ logo, spanTitle, title, desc, image, id, isMobil
         <Link className="text-[#2957A7] hover:ml-[20px] hover:text-black  hover:scale-105 duration-[1s]  text-[14px] xsm:text-[16px] font-semibold flex w-[50%] items-center gap-[4px]" href={`/${id}`} > View case <Image src={'/assets/Arrow.svg'} loading='lazy' width={100} height={100} alt='arrow' className='w-[14px] xsm:w-[18px]' /> </Link>
       </div>
       <div style={blueGradient} className='overflow-hidden flex items-center justify-center h-full rounded-[20px] mdd:rounded-e-[0px] rounded-s-[20px] mdd:rounded-s-[30px] px-[5px] ssm:px-[70px] py-[80px] ssm:py-[80px] bg-l w-full mdd:w-[55%] lg:w-[60%]'>
-  <Image
-    src={image}
-    loading='lazy'
-    width={500}
-    height={500}
-    className='w-full h-full ssm:w-[90%] ssm:h-auto lg:w-[700px] lg:h-[366px] object-contain'
-    alt='product image'
-  />
+      <Image
+  src={image}
+  loading='lazy'
+  width={500}
+  height={500}
+  className='w-full h-full ssm:w-[90%] ssm:h-auto lg:w-[700px] lg:h-[366px] object-contain'
+  alt='product image'
+/>
 </div>
 
     </motion.div>

@@ -23,7 +23,7 @@ const ProtfolioCard = ({ logo, spanTitle, title, desc, image, id, isMobile }) =>
   <Image
     loading='lazy'
     src={image}
-    width={500}
+    width={300}
     height={500}
     className='w-full h-full ssm:w-[90%] ssm:h-auto lg:w-[700px] lg:h-[366px] object-contain'
     alt='product image'
