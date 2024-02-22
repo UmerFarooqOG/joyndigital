@@ -24,16 +24,10 @@ const Navbar = () => {
     <div className='h-full flex justify-between items-center w-full max-w-[1440px] px-[60px] lg:px-[90px] xlb:px-[120px] mx-auto '>
     <Link href={'/'} className='relative' >
         <Image
-          src="/assets/joyn-png.png"
+          src="/assets/logo.png"
           width={1000}
           height={1000}
           alt="Picture of the author" priority className='w-[60px] xsm:w-[110px] h-auto object-cover'
-        />
-        <Image
-          src="/assets/oimg.png"
-          width={1000}
-          height={1000}
-          alt="Picture of the author" priority className='w-[21px] logo absolute top-0 left-[9px] xsm:left-[19px] xsm:w-[38px] h-auto object-cover'
         />
       </Link>
 
