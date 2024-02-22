@@ -9,31 +9,6 @@ const Hero = dynamic(() => import('@/components/Hero.jsx'), { ssr: false });
 
 
 
-// next-seo.config.js
-
-export const metadata = {
-  title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
-  description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
-  openGraph: {
-    type: 'website',
-    url: 'https://www.yourwebsite.com', // Add your website URL here
-    title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
-    description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
-    images: [
-      {
-        url: 'http://joyndigital.com/img/qualityassurance.3d34d203.jpeg', // Add your Open Graph image URL here
-        width: 1200,
-        height: 630,
-        alt: 'Joyn Digital Open Graph Image'
-      }
-    ],
-    'theme-color': '#f2eeee',
-    "color-scheme": 'white gray only',
-  },
-  twitter: {
-    cardType: 'summary_large_image'
-  }
-};
 
 const Page = () => {
 
