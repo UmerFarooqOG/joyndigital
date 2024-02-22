@@ -1,11 +1,25 @@
+'use client'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
-const ProtfolioCard = ({ logo, spanTitle, title, desc, image, id, isMobile }) => {
+const ProtfolioCard = ({ logo, spanTitle, title, desc, image, id }) => {
   const blueGradient = {
     background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)'
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const initialAnimation = !isMobile ? { x: -200, scale: 1 } : { x: 0, scale: 1 };
   const whileInViewAnimation = !isMobile ? { x: 0, scale: 1 } : { x: 0, scale: 1 };

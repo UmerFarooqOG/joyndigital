@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import React from 'react'
@@ -24,12 +25,12 @@ const Hero = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setBackgroundIndex((prevIndex) => (prevIndex + 1) % colors.length);
-            setContentIndex((prevIndex) => (prevIndex + 1) % contents.length);
+            setBackgroundIndex((prevIndex) => (prevIndex + 1) % 2);
+            setContentIndex((prevIndex) => (prevIndex + 1) % 2);
         }, 3000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [backgroundIndex]);
 
 
     const handleMouseMove = (event) => {
@@ -60,8 +61,8 @@ const Hero = () => {
                             alt='circle image'
                             width={500}
                             height={400}
-                            className='absolute left-0 top--100px w-700 h-auto'
-                            loading="lazy"
+                            className='absolute left-0 top--100px w-[700px] h-auto'
+
                         />
                     </div>
                 </div>
