@@ -18,7 +18,7 @@ export const metadata = {
     description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
     images: [
       {
-        url: `https://jd-2x24.vercel.app/${OpImg}`, // Add your Open Graph image URL here
+        url: 'https://media.istockphoto.com/id/1432604833/photo/ballpoint-pen-resting-on-top-of-stack-of-documents.webp?s=1024x1024&w=is&k=20&c=9Wgs_DVxYdZeSsngohDR-r-IiysLlNOnFqbMfU1T6mk=', // Add your Open Graph image URL here
         width: 1200,
         height: 630,
         alt: 'Joyn Digital Open Graph Image'
