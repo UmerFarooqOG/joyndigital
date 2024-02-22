@@ -1,48 +1,60 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
-import { FaPython, FaAws } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiGoogleanalytics, SiReact } from "react-icons/si";
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Carousel } from 'react-responsive-carousel';
-
-const tranitiom = { duration: 2, type: 'spring' }
+import Image from 'next/image';
 
 const linbg = {
   background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)'
 }
 
 const Page = () => {
-  const images = ['/assets/services/services2.jpg', '/assets/services/services3.jpg', '/assets/services/services4.jpg']; 
+  const images = ['/assets/services/services2.jpg', '/assets/services/services3.jpg', '/assets/services/services4.jpg'];
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-        setBackgroundIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setBackgroundIndex((prevIndex) => (prevIndex + 1) % 2);
+
     }, 2000);
 
     return () => clearInterval(interval);
-}, []);
+  }, [backgroundIndex]);
+
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  const htini = !isMobile ? { x: -200, scale: 1 } : { x: 0, scale: 1 }
+  const htwhilein = !isMobile ? { x: 0, scale: 1 } : { x: 0, scale: 1 };
+  const abini = !isMobile ? { y: 200, scale: 1 } : { y: 0, scale: 1 }
+  const abwhilein = !isMobile ? { y: 0, scale: 1 } : { y: 0, scale: 1 };
+
+  const tranitiom = { duration: 2, type: 'spring' }
 
   return (
     <div className=' overflow-hidden w-full mx-auto'>
       {/* ---- --- text-section  */}
       <section className='max-w-[1440px] w-full mt-[80px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
-        <motion.h2 initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className=' text-[35px] tracking-normal ssm:text-[40px] xsm:text-[45px] sm:text-[65px] mdd:text-[70px] lg:text-[90px] xll:text-[102px] leading-normal lg:leading-[120px] w-[70%] text-[#2E2E2E] font-Montserrat font-bold'>The services we offer</motion.h2>
+        <motion.h2 initial={htini}
+          whileInView={htwhilein}
+          transition={tranitiom} className=' text-[35px] tracking-normal ssm:text-[40px] xsm:text-[45px] sm:text-[65px] mdd:text-[70px] lg:text-[90px] xll:text-[102px] leading-normal lg:leading-[120px] w-[70%] text-[#2E2E2E] font-Montserrat font-bold'>The services we offer</motion.h2>
       </section>
 
 
 
       <section className='max-w-[1440px] w-full my-[20px] sm:my-[10px] h-full flex items-center justify-center flex-col px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[2rem] mx-auto'>
 
-        <motion.div initial={{ opacity: 0, x: -180 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='w-full flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start sm:items-start'>
+        <motion.div initial={htini}
+          whileInView={htwhilein}
+          transition={tranitiom} className='w-full flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start sm:items-start'>
           <div className='flex flex-1 items-center justify-start'>
 
 
@@ -51,9 +63,9 @@ const Page = () => {
         </motion.div>
 
 
-        <motion.div initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='w-full mt-20 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start items-start'>
+        <motion.div initial={htini}
+          whileInView={htwhilein}
+          transition={tranitiom} className='w-full mt-20 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start items-start'>
           <h5 className='text-[#2E2E2E] leading-normal xlb:leading-[58px] font-Montserrat font-[500] flex-1   sm:text-start text-[40px] mt-[-10px] lg:mt-[-20px] xll:text-[48px]'>
             Product <span className='font-bold'> Design</span>
           </h5>
@@ -73,9 +85,9 @@ const Page = () => {
 
 
 
-        <motion.div initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, type: 'tween' }} className='w-full mt-32 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start items-start'>
+        <motion.div initial={htini}
+          whileInView={htwhilein}
+          transition={tranitiom} className='w-full mt-32 flex flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-start items-start'>
           <h5 className='text-[#2E2E2E] leading-normal xlb:leading-[58px] font-Montserrat font-[500] flex-1   sm:text-start text-[40px] mt-[-10px] lg:mt-[-20px]  xll:text-[48px]'>
             Product <span className='font-bold'> Development</span>
           </h5>
@@ -92,7 +104,7 @@ const Page = () => {
 
           </div>
         </motion.div>
-      
+
 
 
         <div className='w-full flex mt-20 flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center items-start'>
@@ -101,18 +113,18 @@ const Page = () => {
           </h5>
 
           <div className='flex flex-col w-full md:w-[65%]  lg:w-[65%] xll:w-[70%] mt-[20px] gap-[20px]'>
-            <motion.div initial={{ opacity: 0, x: 200 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap  items-center justify-center gap-[50px] lg:gap-[80px] w-full'>
+            <motion.div initial={htini}
+              whileInView={htwhilein}
+              transition={tranitiom} className='flex flex-wrap  items-center justify-center gap-[50px] lg:gap-[80px] w-full'>
               <Image src="/assets/logos/pythonlogo.png" className='  w-[60px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
               <Image src="/assets/logos/awslogo.png" className='  w-[60px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
               <Image src="/assets/logos/postgrlogo.png" className='  w-[60px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
               <Image src="/assets/logos/googleAnallogo.png" className='  w-[60px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
               <Image src="/assets/logos/reactlogo.png" className='  w-[60px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: -200 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, type: 'tween' }} className='flex flex-wrap items-center justify-center gap-[40px] lg:gap-[60px] w-full'>
+            <motion.div initial={htini}
+              whileInView={htwhilein}
+              transition={tranitiom} className='flex flex-wrap items-center justify-center gap-[40px] lg:gap-[60px] w-full'>
               <Image src="/assets/logos/azurelogo.png" className='  w-[80px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
               <Image src="/assets/logos/javalogo.png" className='  w-[80px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
               <Image src="/assets/logos/nodelogo.png" className='  w-[80px] text-center h-auto mt-[20px] sm:mb-0' width={1000} height={1000} alt='img' />
@@ -128,11 +140,11 @@ const Page = () => {
 
 
 
-      <motion.div initial={{ opacity: 0, y: 220 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: 'tween' }} style={linbg} className='mx-auto'>
-       
-         
+      <motion.div initial={abini}
+        whileInView={abwhilein}
+        transition={tranitiom} style={linbg} className='mx-auto'>
+
+
 
         <div className='w-full max-w-[1440px] mx-auto flex-wrap gap-[20px] h-full flex justify-between items-center sm:max-h-[300px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[80px]'>
           <div className='' >
@@ -146,7 +158,7 @@ const Page = () => {
             </Link>
           </div>
         </div>
-        
+
 
       </motion.div>
 
