@@ -9,13 +9,22 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation';
 
 
-const tranitiom = { duration: 2, type: 'spring' }
-
-const linbg = {
-    background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)'
-}
-
 const Page = () => {
+
+  // Define metadata
+  const metadata = {
+    title: "Get in Touch with Joyn Digital | Contact Us",
+    description: "Ready to take the next step? Contact Joyn Digital today to discuss your project requirements or schedule a consultation. We're here to help you succeed.",
+  };
+
+  // Update document title
+  useEffect(() => {
+    document.title = metadata.title;
+    const metaDescriptionTag = document.querySelector('meta[name="description"]');
+    if (metaDescriptionTag) {
+      metaDescriptionTag.setAttribute('content', metadata.description);
+    }
+  }, [metadata.title,metadata.description]);
 
     const router = useRouter();
     const [regValue, setRegValue] = useState({

@@ -16,16 +16,31 @@ const linbg = {
 }
 
 const Page = () => {
-  const images = ['/assets/services/services2.jpg', '/assets/services/services3.jpg', '/assets/services/services4.jpg']; 
+  const images = ['/assets/services/services2.jpg', '/assets/services/services3.jpg', '/assets/services/services4.jpg'];
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-        setBackgroundIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setBackgroundIndex((prevIndex) => (prevIndex + 1) % 2);
     }, 2000);
 
     return () => clearInterval(interval);
-}, []);
+  }, [backgroundIndex]);
+  // Define metadata
+  const metadata = {
+    title: "Explore Our Comprehensive Services | Joyn Digital",
+    description: "Explore our comprehensive range of digital services designed to help businesses thrive in today's digital landscape. From web development to SEO and digital marketing, we've got you covered.",
+  };
+
+  // Update document title
+  useEffect(() => {
+    document.title = metadata.title;
+    const metaDescriptionTag = document.querySelector('meta[name="description"]');
+    if (metaDescriptionTag) {
+      metaDescriptionTag.setAttribute('content', metadata.description);
+    }
+  }, [metadata.title, metadata.description]);
+
 
   return (
     <div className=' overflow-hidden w-full mx-auto'>
@@ -92,7 +107,7 @@ const Page = () => {
 
           </div>
         </motion.div>
-      
+
 
 
         <div className='w-full flex mt-20 flex-col md:flex-row  gap-[10px] mdd:gap-[30px] justify-center items-start'>
@@ -131,8 +146,8 @@ const Page = () => {
       <motion.div initial={{ opacity: 0, y: 220 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, type: 'tween' }} style={linbg} className='mx-auto'>
-       
-         
+
+
 
         <div className='w-full max-w-[1440px] mx-auto flex-wrap gap-[20px] h-full flex justify-between items-center sm:max-h-[300px] px-[20px] sm:px-[60px] lg:px-[90px] xlb:px-[120px] py-[80px]'>
           <div className='' >
@@ -146,7 +161,7 @@ const Page = () => {
             </Link>
           </div>
         </div>
-        
+
 
       </motion.div>
 

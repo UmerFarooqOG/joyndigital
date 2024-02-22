@@ -1,10 +1,28 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Head from 'next/head'; // Import Head component
 
-const page = () => {
-  const tranitiom = { duration: 2, type: 'spring' }
+const Page = () => {
+  const tranitiom = { duration: 2, type: 'spring' };
+
+  // Define metadata
+  const metadata = {
+    title: "Learn About Joyn Digital's Vision and Team | About Us",
+    description: "Learn about Joyn Digital's vision, mission, and dedicated team of experts. Explore our journey and commitment to delivering exceptional digital services.",
+  };
+  
+  // Update document title
+  useEffect(() => {
+    document.title = metadata.title;
+    const metaDescriptionTag = document.querySelector('meta[name="description"]');
+    if (metaDescriptionTag) {
+      metaDescriptionTag.setAttribute('content', metadata.description);
+    }
+  }, [metadata.title,metadata.description]);
+
+
   return (
     <div className='max-w-[1440px]  overflow-hidden h-full mx-auto'>
       {/* ---- --- text-section  */}
@@ -104,4 +122,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

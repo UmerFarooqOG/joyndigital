@@ -2,28 +2,23 @@
 import { projectData } from '@/app/constant/ProjectDetails'
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState,useClient} from 'react';
 import Loading from '@/app/loading';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { motion } from 'framer-motion'
+import Head from 'next/head'; // Import Head component
 
 const Page = ({ params }) => {
   const id = params.projectDetail;
-  const [projectContent, setProjectContent] = useState({})
+  const [projectContent, setProjectContent] = useState({});
   const [loader, setLoader] = useState(true);
-
 
   useEffect(() => {
     const data = projectData.find((project) => project.id === parseInt(id));
-    setProjectContent(data)
+    setProjectContent(data);
     setLoader(false);
-  }, [id])
-
-  const { name, heading, heroP, sec2img1, sec2img2, sec3p1, sec3p2, sec3p3, sec4img, logo, sec4headingB, sec4headingM, sec4headingM1, npid, bglg, useLogos, theR } = projectContent;
-
-
-
+  }, [id]);
 
   const blueGradient = {
     background: 'linear-gradient(63deg, #163160 0%, #2957A7 98.38%)',
@@ -32,9 +27,28 @@ const Page = ({ params }) => {
     background: 'linear-gradient(298deg, #951314 0%, #EB2022 100%)'
   }
 
+  const { name, heading, heroP, sec2img1, sec2img2, sec3p1, sec3p2, sec3p3, sec4img, logo, sec4headingB, sec4headingM, sec4headingM1, npid, bglg, useLogos, theR } = projectContent;
 
+  const metadata = {
+    title: `In-Depth Analysis of ${name} | Joyn Digital Projects`,
+    description: `Dive deep into the details of ${name} by Joyn Digital. Discover the challenges, solutions, and outcomes of this remarkable digital project.`,
+  };
+    
+    // Update document title
+    useEffect(() => {
+      document.title = metadata.title;
+      const metaDescriptionTag = document.querySelector('meta[name="description"]');
+      if (metaDescriptionTag) {
+        metaDescriptionTag.setAttribute('content', metadata.description);
+      }
+    }, [metadata.title,metadata.description]);
+  
   return (
     <>
+     
+
+
+
       {loader ? <Loading /> :
         <div className='overflow-hidden w-full mx-auto'>
           {/* ---- --- text-section  */}
