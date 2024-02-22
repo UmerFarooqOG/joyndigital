@@ -1,18 +1,16 @@
-
 'use client'
 import Link from 'next/link';
 import { protData } from '@/app/constant/NavLink';
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic'; // Import dynamic function from next/dynamic
+import { motion } from 'framer-motion';
 
+const ProtfolioCardReverse = dynamic(() => import('@/components/ProtCardReverse'), { ssr: false });
+const ProtfolioCard = dynamic(() => import('@/components/ProtfolioCard'), { ssr: false });
+const Hero = dynamic(() => import('@/components/Hero.jsx'), { ssr: false });
 
-const ProtfolioCardReverse = dynamic(() => import('@/components/ProtCardReverse') , {ssr:false});
-const ProtfolioCard = dynamic(() => import('@/components/ProtfolioCard') , {ssr:false});
-const Hero = dynamic(() => import('@/components/Hero.jsx') , {ssr:false});
 const Page = () => {
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
