@@ -21,7 +21,7 @@ export const metadata = {
     description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
     images: [
       {
-        url: '.opengrap.jpg', // Add your Open Graph image URL here
+        url: './opengrap.jpg', // Add your Open Graph image URL here
         width: 1200,
         height: 630,
         alt: 'Joyn Digital Open Graph Image'
