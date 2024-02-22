@@ -58,7 +58,7 @@ const Hero = () => {
                         <Image
                             style={{ transform: `rotate(${rotation}deg)` }}
                             src={images[contentIndex]}
-                            loading='eager'
+                            priority
                             alt='circle image'
                             width={500}
                             height={400}
