@@ -8,29 +8,7 @@ import OpImg from './opengrap.jpg'
 
 
 
-export const metadata = {
-  title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
-  description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
-  openGraph: {
-    type: 'website',
-    url: 'https://jd-2x24.vercel.app/', // Add your website URL here
-    title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
-    description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
-    images: [
-      {
-        url: OpImg.default, // Add your Open Graph image URL here
-        width: 1200,
-        height: 630,
-        alt: 'Joyn Digital Open Graph Image'
-      }
-    ],
-    'theme-color': '#f2eeee',
-    "color-scheme": 'white gray only',
-  },
-  twitter: {
-    cardType: 'summary_large_image'
-  }
-};
+
 
 
 export default function RootLayout({ children }) {
@@ -43,15 +21,30 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
 
-      <body  >
-        <Navbar />
+        <meta property="og:url" content="https://jd-2x24.vercel.app"/>
+          <meta property="og:type" content="website" />
+            <meta property="og:title" content="Innovative Digital Solutions | Joyn Digital - Your IT Partner"/>
+              <meta property="og:description" content="Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals." />
+                <meta property="og:image" content="/opengrap.jpg"/>
 
-        {children}
-        <Footer />
-        <SpeedInsights />
-      </body>
-    </html>
-  )
+                  <meta name="twitter:card" content="summary_large_image"/>
+                    <meta property="twitter:domain" content="jd-2x24.vercel.app"/>
+                      <meta property="twitter:url" content="https://jd-2x24.vercel.app"/>
+                        <meta name="twitter:title" content="Innovative Digital Solutions | Joyn Digital - Your IT Partner"/>
+                          <meta name="twitter:description" content="Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals."/>
+                            <meta name="twitter:image" content="/opengrap.jpg"/>
+
+
+                            </Head>
+
+                            <body  >
+                              <Navbar />
+
+                              {children}
+                              <Footer />
+                              <SpeedInsights />
+                            </body>
+                          </html>
+                          )
 }
