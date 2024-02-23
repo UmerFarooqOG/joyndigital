@@ -47,7 +47,9 @@ const Navbar = () => {
     </div>
         {
           navLinks.map((i) => {
-            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
+            return <li key={i.id}  onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`}>
+              <Link href={i.id} >{i.title}</Link>
+            </li>
 
           })
         }
