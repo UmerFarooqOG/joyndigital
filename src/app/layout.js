@@ -18,7 +18,7 @@ export const metadata = {
     description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
     images: [
       {
-        url: (`/public/opengraph.jpg`),
+        url: 'https://hotimg.com/opengraph.J59EA',
         width: 1200,
         height: 630,
         alt: 'Joyn Digital Open Graph Image'
@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     cardType: 'summary_large_image',
-    'twitter-image': (`/public/opengraph.jpg`)
+    'twitter-image': 'https://hotimg.com/opengraph.J59EA'
   }
 };
 
