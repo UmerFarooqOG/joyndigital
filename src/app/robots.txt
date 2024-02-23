@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: [/private/,/privacy/]
+
+Sitemap: https://jd-2x24.vercel.app/sitemap.xml

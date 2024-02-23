@@ -15,7 +15,7 @@ export const metadata = {
     type: 'website',
     url: 'https://jd-2x24.vercel.app', // Add your website URL here
     title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
-    description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
+    description: "Transform your online presence with Joyn Digital's innovative solutions. Partner with us to achieve your business goals.",
     images: [
       {
         url: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
