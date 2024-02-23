@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Head from 'next/head'
+import ''
 
 
 
@@ -17,7 +18,7 @@ export const metadata = {
     description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
     images: [
       {
-        url: '/opengraph.jpg', // Add your Open Graph image URL here
+        url: `@/public/opengraph.jpg`, // Add your Open Graph image URL here
         width: 1200,
         height: 630,
         alt: 'Joyn Digital Open Graph Image'
