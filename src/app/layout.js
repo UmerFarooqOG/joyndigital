@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Head from 'next/head'
-import ''
+
 
 
 
@@ -13,12 +13,12 @@ export const metadata = {
   description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
   openGraph: {
     type: 'website',
-    url: 'https://jd-2x24.vercel.app/', // Add your website URL here
+    url: 'https://jd-2x24.vercel.app', // Add your website URL here
     title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
     description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
     images: [
       {
-        url: `@/public/opengraph.jpg`, // Add your Open Graph image URL here
+        url: '/opengraph.jpg', // Add your Open Graph image URL here
         width: 1200,
         height: 630,
         alt: 'Joyn Digital Open Graph Image'
@@ -28,7 +28,8 @@ export const metadata = {
     "color-scheme": 'white gray only',
   },
   twitter: {
-    cardType: 'summary_large_image'
+    cardType: 'summary_large_image',
+    'twitter-image': '/opengraph.jpg'
   }
 };
 
