@@ -25,11 +25,11 @@ const Navbar = () => {
     <Link href={'/'} className='relative' >
         <Image
           src="/assets/logo.png"
-          width={1000}
-          height={1000}
-          alt="Picture of the author" priority className='w-[60px] xsm:w-[110px] h-auto object-cover'
+          width={500}
+          height={500}
+          alt="Picture of the author" loading='lazy' className='w-[60px] xsm:w-[110px] h-auto object-cover'
         />
-    
+       
       </Link>
 
       <ul className={`flex  items-center flex-col absolute top-0 left-0 transition-all duration-[0.6s] sm:static sm:flex-row w-full h-[100vh] bg-[#F2EEEE] sm:bg-transparent sm:h-auto 
@@ -38,8 +38,8 @@ const Navbar = () => {
     <Link onClick={() => setOpen(false)} className='cursor-pointer  inline-block absolute top-[20px] left-[20px] sm:hidden' href={'/'} >
         <Image
           src="/assets/logo.png"
-          width={1000}
-          height={1000}
+          width={500}
+          height={500}
           alt="Picture of the author" className='w-[60px] xsm:w-[100px] h-auto object-cover'
         />
       </Link>
@@ -47,9 +47,7 @@ const Navbar = () => {
     </div>
         {
           navLinks.map((i) => {
-            return <li key={i.id}  onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`}>
-              <Link href={i.id} >{i.title}</Link>
-            </li>
+            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
 
           })
         }
