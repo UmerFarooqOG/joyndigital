@@ -10,7 +10,7 @@ export const protIdData = [
     {
         logo:chatkrowlogo,
         spanTitle:"AI Based Chatbot",
-        title:"for Whatsapp and your",
+        title:"for Whatsapp and your Mobile",
         desc:"ChatKrow is an AI companion designed to provide friendship, conversation, and entertainment to anyone who needs it. With Friday, you'll have a new virtual friend to chat with, learn from, and explore new ideas with.",
         image:proj1,
         button:'view case',
