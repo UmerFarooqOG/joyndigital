@@ -6,15 +6,17 @@ import { CiMenuFries } from 'react-icons/ci'
 import { useState } from 'react'
 import { AiOutlineClose } from "react-icons/ai";
 import './com.css'
+import { usePathname } from 'next/navigation'
+
 const Navbar = () => {
   const [navOpen,setOpen] = useState(false);
-  const [active,setActive] = useState("Home");
+
+  const pathname = usePathname()
 
 
-  const LinkClick =  (i) =>{
-      setActive(i);
+  const LinkClick =  () =>{
       setOpen(false);
-  }
+    }
 
 
 
@@ -25,11 +27,11 @@ const Navbar = () => {
     <Link href={'/'} className='relative' >
         <Image
           src="/assets/logo.png"
-          width={500}
-          height={500}
-          alt="Picture of the author" loading='lazy' className='w-[60px] xsm:w-[110px] h-auto object-cover'
+          width={1000}
+          height={1000}
+          alt="Picture of the author" priority className='w-[60px] xsm:w-[110px] h-auto object-cover'
         />
-       
+    
       </Link>
 
       <ul className={`flex  items-center flex-col absolute top-0 left-0 transition-all duration-[0.6s] sm:static sm:flex-row w-full h-[100vh] bg-[#F2EEEE] sm:bg-transparent sm:h-auto 
@@ -38,8 +40,8 @@ const Navbar = () => {
     <Link onClick={() => setOpen(false)} className='cursor-pointer  inline-block absolute top-[20px] left-[20px] sm:hidden' href={'/'} >
         <Image
           src="/assets/logo.png"
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           alt="Picture of the author" className='w-[60px] xsm:w-[100px] h-auto object-cover'
         />
       </Link>
@@ -47,7 +49,9 @@ const Navbar = () => {
     </div>
         {
           navLinks.map((i) => {
-            return <Link onClick={() => LinkClick(i)}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${active === i ? 'active' : ''}`} href={i.id} key={i.id} >{i.title}</Link>
+            return <li key={i.id}  onClick={LinkClick}   className={`font-Noto text-[18px] lg:text-[16px] text-[#202020] link font-[400] ${pathname === i.id ? 'active' : ''}`}>
+              <Link href={i.id} >{i.title}</Link>
+            </li>
 
           })
         }

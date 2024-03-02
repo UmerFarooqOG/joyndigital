@@ -7,7 +7,7 @@ const Loading = () => {
     <div className='absolute top-0 left-0 w-full z-[999] h-[100vh] flex items-center justify-center bg-white'>
 
 
-  <Image src="/assets/joynanimation.gif" priority={true} alt='Loader' width={400} height={300} className=' w-[80px] xsm:w-[140px] h-auto' />
+  <Image src="/assets/joynanimation.gif" alt='Loader' width={2000} height={1000} className=' w-[80px] xsm:w-[140px] h-auto' />
 
   </div>
   )
