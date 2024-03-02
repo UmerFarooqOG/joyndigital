@@ -13,7 +13,7 @@ export const metadata = {
   description: 'Discover innovative digital solutions tailored to meet your business needs at Joyn Digital. Partner with us to transform your online presence and achieve your goals.',
   openGraph: {
     type: 'website',
-    url: 'https://jd-2x24.vercel.app', // Add your website URL here
+    url: 'https://www.joyndigital.com/', // Add your website URL here
     title: 'Innovative Digital Solutions | Joyn Digital - Your IT Partner',
     description: "Transform your online presence with Joyn Digital's innovative solutions. Partner with us to achieve your business goals.",
     images: [

@@ -16,14 +16,32 @@ const ServComp = () => {
 
     const images = ['/assets/services/services2.jpg', '/assets/services/services3.jpg', '/assets/services/services4.jpg'];
     const [backgroundIndex, setBackgroundIndex] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setBackgroundIndex((prevIndex) => (prevIndex + 1) % 2);
-      }, 2000);
-  
-      return () => clearInterval(interval);
-    }, [backgroundIndex]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBackgroundIndex((prevIndex) => (prevIndex + 1) % 2);
+
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [backgroundIndex]);
+
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  const htini = !isMobile ? { x: -200, scale: 1 } : { x: 0, scale: 1 }
+  const htwhilein = !isMobile ? { x: 0, scale: 1 } : { x: 0, scale: 1 };
+  const abini = !isMobile ? { y: 200, scale: 1 } : { y: 0, scale: 1 }
+  const abwhilein = !isMobile ? { y: 0, scale: 1 } : { y: 0, scale: 1 };
+
 
   return (
     <>
