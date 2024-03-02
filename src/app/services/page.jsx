@@ -1,5 +1,6 @@
-
 import ServComp from '@/components/ServComp';
+
+
 
 export const metadata = {
   title: "Explore Our Comprehensive Services | Joyn Digital",
@@ -8,6 +9,7 @@ export const metadata = {
 
 
 const Page = () => {
+
   return (
     <div className=' overflow-hidden w-full mx-auto'>
       {/* ---- --- text-section  */}
